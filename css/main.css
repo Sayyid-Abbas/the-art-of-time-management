@@ -1,0 +1,36 @@
+/* #region Start Global Rules */
+* {
+	box-sizing: border-box;
+}
+:root {
+	--main-color: #004c99;
+}
+body {
+	scroll-behavior: smooth;
+	margin: 0px;
+	padding: 0px;
+}
+/* #endregion End Global Rules */
+/* #region Start Components */
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+/* #endregion End Components */
