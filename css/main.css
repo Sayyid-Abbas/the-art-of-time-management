@@ -130,6 +130,11 @@ header .container nav ul .chapters-link .chapters .chapters-list li {
 	box-shadow: 0px 0px 2px var(--secondary-color);
 	background-color: var(--background-color);
 	border: 1px solid var(--secondary-color);
+	transition-duration: var(--transition-duration);
+}
+header .container nav ul .chapters-link .chapters .chapters-list li:hover {
+	background-color: var(--secondary-color);
+	color: white;
 }
 header .container nav ul .chapters-link .chapters .chapters-list li .chapter-number {
 	font-weight: bold;
@@ -191,7 +196,6 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
 		display: none;
 	}
 }
-	
 @media (max-width: 767px) {
 	header .container .nav-link {
 		display: block;
