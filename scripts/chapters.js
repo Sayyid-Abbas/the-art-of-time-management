@@ -18,8 +18,8 @@ export default async function chaptersList() {
             chapters.classList.add("chapters-list");
     
             data.forEach(chapter => {
-                const li = document.createElement("li");
-    
+                const li = document.createElement("li"); 
+                
                 const chapterNumber = document.createElement("div");
                 chapterNumber.classList.add("chapter-number");
                 chapterNumber.textContent = chapter.number;

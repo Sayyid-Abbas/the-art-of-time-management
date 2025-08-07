@@ -25,17 +25,19 @@
           <nav>
             <ul>
               <li><a href="#intro">مقدمة الكتاب</a></li>
-              <li><a href="#about">عن المؤلف</a></li>
               <li class="chapters-link">
                 <a href="#chapters">الفصول</a>
-                <i class="fa-solid fa-angle-down chapters-arrow"></i>
+                <i class="fa-solid fa-angle-down chapters-arrow" tabindex="0" role="button" aria-label="عرض الفصول"
+                  onclick="toggleChapters()"></i>
+              </i>
                 <div class="chapters"></div>
                 <div class="mobile-chapters"></div>
               </li>
               <li><a href="#tools">الجداول والتحديات</a></li>
               <li><a href="#pomodoro">بومودورو</a></li>
-              <li><a herf="#contact">تواصل معنا</a></li>
-            </ul>
+              <li><a href="#contact">تواصل معنا</a></li>
+              <li><a href="#about">عن المؤلف</a></li>
+            </ul>     
           </nav>
         </div>
       </header>
