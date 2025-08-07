@@ -92,7 +92,7 @@ header .container nav ul li.chapters-link i {
   margin-right: 5px;
 	animation-name: go-down;
 	animation-duration: 0.6s;
-	animation-timing-function: linear;
+	/* animation-timing-function: linear; */
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	position: relative;
@@ -184,7 +184,6 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
 	margin-bottom: 10px;
 	padding: 10px;
 	box-shadow: 0px 0px 2px var(--secondary-color);
-	background-color: var(--background-color);
 	border: 1px solid var(--secondary-color);
 }
 @media (max-width: 991px) {
@@ -198,6 +197,9 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
 	}
 }
 @media (max-width: 767px) {
+	header {
+		height: 70px;
+	}
 	header .container .nav-link {
 		display: block;
 	}
@@ -207,17 +209,17 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
 		opacity: 0;
 		border-radius: 5px;
 		left: 0px;
-		top: 90px;
+		top: 70px;
 		background-color: white;
 		box-shadow: 0px 0px 10px #CCC;
 		height: auto;
 		width: 300px;
 		transition-duration: var(--transition-duration);
 		pointer-events: none;
+		z-index: 1000;
 	}
 	header .container nav.active {
 		pointer-events: auto;
-		top: 90px;
 		opacity: 1;
 	}
 	header .container nav > ul {
@@ -257,6 +259,10 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
 	header .container nav ul .chapters-link i {
 		margin-bottom: 20px;
 	}
+	header .container .logo a img {
+		width: 75px;
+		height: 75px;
+	}
 }
 @media (max-width: 1200px) {
 	header .container nav ul .chapters-link .chapters .chapters-list {
@@ -269,8 +275,22 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   display: flex;
   align-items: center;
   justify-content: center;
-	height: calc(100vh - 90px);
+  height: calc(100vh - 90px);
   padding: 10px;
+  position: relative;
+}
+.landing-page .go-down {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  transition-duration: var(--transition-duration);
+  animation-name: go-down;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 0.5s;
 }
 .landing-page .container {
   background-color: var(--main-color);
@@ -319,9 +339,9 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
 /* #region Start Quote */
 .quote {
   margin-bottom: 30px;
+  padding: 25px;
 }
 .quote .container {
-  text-align: center;
   background-color: var(--main-color);
   padding: 10px;
   border-radius: 10px;
@@ -329,15 +349,38 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  transition-duration: var(--transition-duration);
+}
+.quote .container:hover {
+  box-shadow: 0px 0px 10px #CCC;
+  transform: translateY(-5px);
+}
+.quote .container .text {
+  flex: 1;
+  text-align: center;
 }
 .quote .container h2 {
   color: var(--font-color);
   font-weight: 500;
   line-height: 2;
 }
-.quote .container img {
-  width: 300px;
-  border-radius: 10px;
+.quote .container p {
+  color: #777;
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 2;
+}
+@media (max-width: 767px) {
+	.quote .container:hover {
+		box-shadow: none;
+		transform: translateY(0);
+	}
+	.quote .container .text h2 {
+		font-size: 20px;
+	}
+	.quote .container .text p {
+		font-size: 16px;
+	}
 }
 /* #endregion End Quote */
 /* #region Start Footer  */
