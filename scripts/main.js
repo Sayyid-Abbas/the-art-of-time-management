@@ -74,3 +74,8 @@ document.addEventListener("scroll", () => {
         mobileChapters.innerHTML = "";
     }, 100);
 })
+
+
+// Footer
+let year = document.querySelector(".year");
+year.textContent = new Date().getFullYear()
