@@ -316,6 +316,30 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   }
 }
 /* #endregion End Landing Page */
+/* #region Start Quote */
+.quote {
+  margin-bottom: 30px;
+}
+.quote .container {
+  text-align: center;
+  background-color: var(--main-color);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.quote .container h2 {
+  color: var(--font-color);
+  font-weight: 500;
+  line-height: 2;
+}
+.quote .container img {
+  width: 300px;
+  border-radius: 10px;
+}
+/* #endregion End Quote */
 /* #region Start Footer  */
 footer {
   user-select: none;
