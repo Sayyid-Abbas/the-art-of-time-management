@@ -11,7 +11,7 @@ export default async function chaptersList() {
             
             return cachedChapters;
         } else {
-            const response = await fetch("../jsons/chaptersInfo.json");
+            const response = await fetch("/jsons/chaptersInfo.json");
             const data = await response.json();
     
             const chapters = document.createElement("ul");
