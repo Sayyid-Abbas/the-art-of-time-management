@@ -307,6 +307,19 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   cursor: pointer;
   transition-duration: var(--transition-duration);
   position: relative;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.landing-page .button button a {
+  display: flex;
+  align-items: center;
+}
+.landing-page .button button a img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  transition-duration: var(--transition-duration);
 }
 .landing-page .button button::before,
 .landing-page .button button::after {
@@ -379,6 +392,10 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   .landing-page .button button {
     font-size: 1rem;
     padding: 8px 16px;
+  }
+  .landing-page .button button:hover {
+    background-color: var(--secondary-color);
+    box-shadow: none;
   }
 }
 /* #endregion End Landing Page */
