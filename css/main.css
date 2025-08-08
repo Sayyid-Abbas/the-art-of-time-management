@@ -287,7 +287,7 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   font-size: 24px;
   cursor: pointer;
   transition-duration: var(--transition-duration);
-  animation-name: go-down;
+  animation-name: go-down-arrow;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-duration: 0.5s;
@@ -450,6 +450,14 @@ footer .container .footer-content .social a:hover {
 	}
 	100% {
 		transform: translateY(0);
+	}
+}
+@keyframes go-down-arrow {
+	0% {
+		transform: translate(-50%, 74%);
+	}
+	100% {
+		transform: translateY(-50%, 0);
 	}
 }
 @keyframes up-down-img {
