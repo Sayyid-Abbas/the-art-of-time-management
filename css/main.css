@@ -6,9 +6,11 @@
 :root {
 	--main-color: #fdfdfd;
 	--secondary-color: #40E0D0;
+  --secondary-color-hover: #3cb0b0;
 	--font-color: #0B2447;
 	--background-color: #e6f2f2;
 	--transition-duration: 0.3s;
+  --font-awesome: "Font Awesome 6 Free";
 }
 body {
 	scroll-behavior: smooth;
@@ -275,24 +277,64 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: calc(100vh - 90px);
   padding: 10px;
   position: relative;
+  gap: 10px;
 }
-.landing-page .go-down {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
+.landing-page .button {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+.landing-page .button p {
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: var(--main-color);
+  color: var(--font-color);
+  border-radius: 6px;
+}
+.landing-page .button button {
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
   cursor: pointer;
   transition-duration: var(--transition-duration);
-  animation-name: go-down-arrow;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-duration: 0.5s;
+  position: relative;
 }
-.landing-page .container {
+.landing-page .button button::before,
+.landing-page .button button::after {
+  font-family: var(--font-awesome);
+  font-weight: 900;
+  position: absolute;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+.landing-page .button button:before {
+  content: "\f100";
+  right: -30px;
+  animation-name: go-right;
+}
+.landing-page .button button:after {
+  left: -30px;
+  content: "\f101";
+  animation-name: go-left;
+}
+.landing-page .button button:hover {
+  background-color: var(--secondary-color-hover);
+  box-shadow: 0px 0px 10px #CCC;
+}
+.landing-page .button button a {
+  color: white;
+  text-decoration: none;
+}
+.landing-page .container.book-cover {
   background-color: var(--main-color);
   height: 70%;
   box-shadow: 0px 0px 10px #CCC ;
@@ -315,7 +357,7 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   margin-top: 20px;
   color: var(--font-color);
 }
-.landing-page .container img {
+.landing-page .container.book-cover img {
   height: 400px;
   margin-top: 10px;
   animation-name: up-down-img;
@@ -325,7 +367,7 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   animation-duration: 4s;
 }
 @media (max-width: 767px) {
-  .landing-page .container img {
+  .landing-page .container.book-cover img {
     height: 300px;
   }
   .landing-page .container h1 {
@@ -333,6 +375,10 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   }
   .landing-page .container p {
     font-size: 1rem;
+  }
+  .landing-page .button button {
+    font-size: 1rem;
+    padding: 8px 16px;
   }
 }
 /* #endregion End Landing Page */
@@ -452,13 +498,21 @@ footer .container .footer-content .social a:hover {
 		transform: translateY(0);
 	}
 }
-@keyframes go-down-arrow {
-	0% {
-		transform: translate(-50%, 74%);
-	}
-	100% {
-		transform: translateY(-50%, 0);
-	}
+@keyframes go-left {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+}
+@keyframes go-right {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
 }
 @keyframes up-down-img {
   0%, 100% {
