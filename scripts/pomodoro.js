@@ -2,7 +2,7 @@
 let minutes, seconds = 0;
 let timerInterval;
 let running = false;
-let mode = "work"; // work / short / long
+let mode = "work";
 let sessionCount = 1;
 let endTime = null;
 
@@ -83,18 +83,30 @@ function tick() {
     } else {
       if (mode === "short") {
         sessionCount++;
-        localStorage.setItem("pomodoro_sessionCount", sessionCount); // تحديث رقم الجلسة
+        localStorage.setItem("pomodoro_sessionCount", sessionCount); 
         startMode("work");
       } else if (mode === "long") {
         sessionCount = 1;
-        localStorage.setItem("pomodoro_sessionCount", sessionCount); // تحديث رقم الجلسة
+        localStorage.setItem("pomodoro_sessionCount", sessionCount); 
         startMode("work");
       }
     }
-    updateDisplay(); // تحديث العرض
+    updateDisplay(); 
     startTimer();
   }
 }
+
+
+let startButton = document.querySelector(".start");
+let stopButton = document.querySelector(".stop");
+let resetButton = document.querySelector(".reset");
+let resumeButton = document.querySelector(".resume");
+
+startButton.onclick = startTimer;
+stopButton.onclick = pauseTimer; 
+resetButton.onclick = resetTimer;
+resumeButton.onclick = resumeTimer;
+
 
 function startTimer() {
   if (!running) {

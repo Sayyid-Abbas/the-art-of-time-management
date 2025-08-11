@@ -26,7 +26,7 @@
         <div class="nav-link"><i class="fa-solid fa-bars"></i></div>
         <nav>
           <ul>
-            <li><a href="intro.html">مقدمة</a></li>
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
             <li class="chapters-link">
               <a href="chapters.html">الفصول</a>
               <i class="fa-solid fa-angle-down chapters-arrow" tabindex="0" role="button" aria-label="عرض الفصول"></i>
@@ -44,22 +44,26 @@
     </header>
     <!-- #endregion End Header -->
     <!-- #region Start Pomodoro Section -->
-      <div class="timer-container">
+      <div class="timer">
         <div class="container">
-          <h1>مؤقت بومودورو</h1>
-          <label for="workTime">مدة العمل (دقائق):</label>
-          <input type="number" id="workTime" min="1" max="180" value="25">
-          <label for="shortBreak">مدة الاستراحة القصيرة (دقائق):</label>
-          <input type="number" id="shortBreak" min="1" max="60" value="5">
-          <label for="longBreak">مدة الاستراحة الطويلة (دقائق):</label>
-          <input type="number" id="longBreak" min="1" max="120" value="15">
-          <div id="timer">25:00</div>
-          <div id="status">وضع العمل</div>
-          <div>الجلسة: <span id="sessionCount">1</span>/4</div>
-          <button onclick="startTimer()">ابدأ</button>
-          <button onclick="pauseTimer()">إيقاف</button>
-          <button onclick="resetTimer()">إعادة ضبط</button>
-          <button onclick="resumeTimer()">استئناف</button>
+          <div class="pomo">
+            <h1>مؤقت بومودورو</h1>
+            <label for="workTime">مدة العمل (دقائق):</label>
+            <input type="number" id="workTime" min="1" max="180" value="25">
+            <label for="shortBreak">مدة الاستراحة القصيرة (دقائق):</label>
+            <input type="number" id="shortBreak" min="1" max="60" value="5">
+            <label for="longBreak">مدة الاستراحة الطويلة (دقائق):</label>
+            <input type="number" id="longBreak" min="1" max="120" value="15">
+            <div id="timer">25:00</div>
+            <div id="status">وضع العمل</div>
+            <div>الجلسة: <span id="sessionCount">1</span>/4</div>
+            <div class="buttons">
+              <button class="start">ابدأ</button>
+              <button class="stop">إيقاف</button>
+              <button class="reset">إعادة ضبط</button>
+              <button class="resume">استئناف</button>
+            </div>
+          </div>
         </div>
       </div>
     <!-- #endregion End Pomodoro Section -->
@@ -70,9 +74,9 @@
           <p>جميع الحقوق محفوظة &copy; <span class="year"></span></p>
           <ul>
             <ul>
-              <li><a href="#intro">مقدمة</a></li>
-              <li><a href="#chapters">الفصول</a></li>
-              <li><a href="#tools">الجداول والتحديات</a></li>
+              <li><a href="index.html">الصفحة الرئيسية</a></li>
+              <li><a href="chapters.html">الفصول</a></li>
+              <li><a href="tools.html">الجداول والتحديات</a></li>
             </ul>
             <ul>
               <li><a href="#pomodoro">بومودورو</a></li>

@@ -1,3 +1,86 @@
+@import url("/css/main.css");
 /* #region Start Pomodoro CSS */
-
+.timer {
+  min-height: calc(100vh - 140px - 90px);
+  background-color: var(--background-color);
+  display: flex;
+}
+.timer .container {
+  background-color: var(--background-color);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+.timer .container .pomo {
+  background-color: var(--main-color);
+  padding: 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  color: var(--font-color);
+}
+.timer .container .pomo h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.timer .container .pomo label {
+  font-size: 20px;
+  width: 100%;
+  text-align: right;
+}
+.timer .container .pomo input {
+  padding: 10px 20px 10px 10px;
+  border: 1px solid var(--light-blue);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.timer .container .pomo .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.timer .container .pomo .buttons button {
+  background: var(--blue-background-color);
+  color:white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px 3px;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .timer {
+    min-height: calc(100vh - 226px - 60px);
+  }
+  .timer .container .pomo {
+    width: 100%;
+  }
+  .timer .container .pomo h1 {
+    font-size: 30px;
+  }
+  .timer .container .pomo label {
+    font-size: 18px;
+    text-align: center;
+  }
+  .timer .container .pomo input {
+    font-size: 16px;
+    padding: 5px 10px 5px 10px;
+  }
+  .timer .container .pomo .buttons button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
 /* #endregion End Pomodoro CSS */
