@@ -163,6 +163,12 @@ header .container nav > ul li a {
 	transition-duration: var(--transition-duration);
 	white-space: nowrap;
 }
+header .container nav > ul li a.active {
+  color: #40E0D0
+}
+header .container nav > ul li a.active:hover {
+  color: #40E0D0;
+}
 header .container nav > ul li a:hover {
 	background-color: rgb(222, 222, 222);
 	color: black;	
@@ -474,6 +480,7 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
 /* #endregion End Landing Page */
 /* #region Start quotes */
 .quotes {
+  display: none;
   margin-bottom: 30px;
   padding: 10px;
 }
@@ -546,6 +553,9 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   } 
 }
 @media (max-width: 1200px) {
+  .quotes {
+    display: block;
+  }
   .quotes .container {
     flex-direction: column;
     align-items: center;
