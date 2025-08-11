@@ -97,7 +97,7 @@ header .container nav ul li.chapters-link i {
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	position: relative;
-  height: 50px;
+  height: 30px;
   width: 25px;
   display: flex;
   align-items: center;
@@ -287,6 +287,9 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   position: relative;
   gap: 10px;
 }
+.landing-page > .container {
+  padding: 10px;
+}
 .landing-page .button {
 	display: flex;
   align-items: center;
@@ -359,22 +362,71 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20px;
+}
+.landing-page .container.container.book-cover > div {
+  background-color: var(--main-color);
+  box-shadow: 0px 0px 10px #CCC;
+  border-radius: 8px;
+}
+.landing-page .container > ul {
+  padding: 0px;
+}
+.landing-page .container.book-cover ul {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex: 1;
+}
+.landing-page .container.book-cover ul li > img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  transition-duration: var(--transition-duration);
+}
+.landing-page .container.book-cover ul li {
+  background-color: var(--background-color);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--font-color);
+  transition-duration: var(--transition-duration);
+  cursor: default;
+  width: 250px;
+}
+.landing-page .container.book-cover ul li:hover {
+  background-color: var(--secondary-color-hover);
+  color: var(--main-color);
+  box-shadow: 0px 0px 10px #CCC;
+}
+.landing-page .container.book-cover ul li:hover > h2,
+.landing-page .container.book-cover ul li:hover > p {
+  color: var(--main-color);
+}
+.landing-page .container.book-cover ul li > h2 {
+  font-size: 16px;
+  color: var(--font-color);
+  margin-bottom: 10px;
+}
+.landing-page .container.book-cover ul li > p {
+  font-size: 14px;
 }
 .landing-page .container h1 {
   text-align: center;
   margin-top: 0px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding-top: 50px;
   color: var(--font-color);
 } 
 .landing-page .container p {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 20px;
   color: var(--font-color);
 }
-.landing-page .container.book-cover img {
+.landing-page .container.book-cover  img.book {
   height: 400px;
   margin-top: 10px;
   animation-name: up-down-img;
@@ -384,7 +436,7 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   animation-duration: 4s;
 }
 @media (max-width: 767px) {
-  .landing-page .container.book-cover img {
+  .landing-page .container.book-cover img.book {
     height: 300px;
   }
   .landing-page .container h1 {
@@ -402,13 +454,26 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
     box-shadow: none;
   }
 }
-/* #endregion End Landing Page */
-/* #region Start Quote */
-.quote {
-  margin-bottom: 30px;
-  padding: 25px;
+@media (max-width: 1200px) {
+  .landing-page .container.book-cover {
+    flex-direction: column;
+    align-items: center;
+  }
+  .landing-page .container > div {
+    background-color: transparent !important;
+    box-shadow: none !important; 
+  }
+  .landing-page .container:not(.qoutes) > ul {
+    display: none !important;
+  }
 }
-.quote .container {
+/* #endregion End Landing Page */
+/* #region Start quotes */
+.quotes {
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.quotes .container {
   background-color: var(--main-color);
   padding: 10px;
   border-radius: 10px;
@@ -416,46 +481,89 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  transition-duration: var(--transition-duration);
 }
-.quote .container:hover {
-  box-shadow: 0px 0px 10px #CCC;
-  transform: translateY(-5px);
-}
-.quote .container .text {
+.quotes .container .text {
   flex: 1;
   text-align: center;
 }
-.quote .container h2 {
+.quotes .container h2 {
   color: var(--font-color);
   font-weight: 500;
   line-height: 2;
 }
-.quote .container p {
+.quotes .container p {
   color: #777;
   margin-top: 10px;
   font-size: 18px;
   line-height: 2;
 }
+.quotes .container ul {
+  display: none;
+  margin-top: 20px;
+  gap: 10px;
+  padding: 0px;
+  flex: 1;
+  width: 75%;
+}
+.quotes .container ul li {
+  background-color: var(--background-color);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--font-color);
+  transition-duration: var(--transition-duration);
+  cursor: default;
+  width: 100%;
+}
+.quotes .container ul li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
 @media (max-width: 767px) {
-	.quote .container:hover {
-		box-shadow: none;
+  .quotes .container:hover {
+    box-shadow: none;
 		transform: translateY(0);
 	}
-	.quote .container .text h2 {
-		font-size: 20px;
+	.quotes .container .text h2 {
+    font-size: 20px;
 	}
-	.quote .container .text p {
-		font-size: 16px;
+	.quotes .container .text p {
+    font-size: 16px;
 	}
+  .quotes .container ul li > h2 {
+    font-size: 16px;
+    color: var(--font-color);
+    margin-bottom: 10px;
+  }
+  .quotes .container ul li > p {
+    font-size: 14px;
+    color: #777;
+  } 
 }
-/* #endregion End Quote */
+@media (max-width: 1200px) {
+  .quotes .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .quotes .container .text {
+    text-align: center;
+  }
+  .quotes .container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .quotes .container .text {
+    box-shadow: 0px 0px 10px #CCC;
+  }
+}
+/* #endregion End quotes */
 /* #region Start Footer  */
 footer {
   user-select: none;
   background-color: var(--main-color);
   color: var(--font-color);
-  padding: 20px;
 }
 footer .container .footer-content {
   display: flex;
