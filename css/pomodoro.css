@@ -59,6 +59,10 @@
   font-size: 14px;
   border-radius: 10px;
   cursor: pointer;
+  transition-duration: var(--transition-duration);
+}
+.timer .container .pomo .buttons button:hover {
+  background: var(--font-color);
 }
 @media (max-width: 768px) {
   .timer {
@@ -81,6 +85,9 @@
   .timer .container .pomo .buttons button {
     font-size: 12px;
     padding: 8px 12px;
+  }
+  .timer .container .pomo .buttons button:hover {
+    background: var(--blue-background-color);
   }
 }
 /* #endregion End Pomodoro CSS */

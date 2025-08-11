@@ -336,6 +336,8 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   position: absolute;
   animation-duration: 0.8s;
   animation-iteration-count: infinite;
+  cursor: default;
+  pointer-events: none;
 }
 .landing-page .button button:before {
   content: "\f100";
