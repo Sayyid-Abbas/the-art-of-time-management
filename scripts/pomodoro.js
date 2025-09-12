@@ -1,5 +1,4 @@
-
-let minutes, seconds = 0;
+let minutes = 0, seconds = 0;
 let timerInterval;
 let running = false;
 let mode = "work";
@@ -12,22 +11,64 @@ function saveSettings() {
   localStorage.setItem("pomodoro_longBreak", document.getElementById("longBreak").value);
   localStorage.setItem("pomodoro_mode", mode);
   localStorage.setItem("pomodoro_sessionCount", sessionCount);
+  localStorage.setItem("pomodoro_minutes", minutes);
+  localStorage.setItem("pomodoro_seconds", seconds);
   if (endTime) {
     localStorage.setItem("pomodoro_endTime", endTime);
+  } else {
+    localStorage.removeItem("pomodoro_endTime"); 
   }
 }
 
-function loadSettings() {
-  if (localStorage.getItem("pomodoro_workTime")) {
-    document.getElementById("workTime").value = localStorage.getItem("pomodoro_workTime");
-    document.getElementById("shortBreak").value = localStorage.getItem("pomodoro_shortBreak");
-    document.getElementById("longBreak").value = localStorage.getItem("pomodoro_longBreak");
+document.getElementById("workTime").addEventListener("change", () => {
+  localStorage.setItem("pomodoro_workTime", document.getElementById("workTime").value);
+  if (!running && mode === "work") {
+    minutes = parseInt(document.getElementById("workTime").value);
+    seconds = 0;
+    endTime = null;
+    updateDisplay();
   }
+});
+
+document.getElementById("shortBreak").addEventListener("change", () => {
+  localStorage.setItem("pomodoro_shortBreak", document.getElementById("shortBreak").value);
+  if (!running && mode === "short") {
+    minutes = parseInt(document.getElementById("shortBreak").value);
+    seconds = 0;
+    endTime = null;
+    updateDisplay();
+  }
+});
+
+document.getElementById("longBreak").addEventListener("change", () => {
+  localStorage.setItem("pomodoro_longBreak", document.getElementById("longBreak").value);
+  if (!running && mode === "long") {
+    minutes = parseInt(document.getElementById("longBreak").value);
+    seconds = 0;
+    endTime = null;
+    updateDisplay();
+  }
+});
+
+function loadSettings() {
+  const workTime = localStorage.getItem("pomodoro_workTime");
+  const shortBreak = localStorage.getItem("pomodoro_shortBreak");
+  const longBreak = localStorage.getItem("pomodoro_longBreak");
+
+  if (workTime) document.getElementById("workTime").value = workTime;
+  if (shortBreak) document.getElementById("shortBreak").value = shortBreak;
+  if (longBreak) document.getElementById("longBreak").value = longBreak;
+
   if (localStorage.getItem("pomodoro_mode")) {
     mode = localStorage.getItem("pomodoro_mode");
   }
   if (localStorage.getItem("pomodoro_sessionCount")) {
     sessionCount = parseInt(localStorage.getItem("pomodoro_sessionCount"));
+  }
+
+  if (localStorage.getItem("pomodoro_minutes")) {
+    minutes = parseInt(localStorage.getItem("pomodoro_minutes"));
+    seconds = parseInt(localStorage.getItem("pomodoro_seconds"));
   }
 }
 
@@ -35,6 +76,7 @@ function updateDisplay() {
   document.getElementById("timer").textContent =
     `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
   document.getElementById("sessionCount").textContent = sessionCount;
+
   if (mode === "work") {
     document.getElementById("status").textContent = "وضع العمل";
   } else if (mode === "short") {
@@ -46,6 +88,7 @@ function updateDisplay() {
 
 function startMode(newMode) {
   mode = newMode;
+
   if (mode === "work") {
     minutes = parseInt(document.getElementById("workTime").value);
   } else if (mode === "short") {
@@ -53,10 +96,15 @@ function startMode(newMode) {
   } else {
     minutes = parseInt(document.getElementById("longBreak").value);
   }
+
   seconds = 0;
+  endTime = null;
   updateDisplay();
-  endTime = Date.now() + (minutes * 60 + seconds) * 1000;
   saveSettings();
+}
+
+function notifyEnd() {
+  console.log("🔔 Session ended!");
 }
 
 function tick() {
@@ -71,51 +119,52 @@ function tick() {
   if (remaining <= 0) {
     clearInterval(timerInterval);
     running = false;
-    alert("انتهت الجلسة!");
+    notifyEnd();
     localStorage.removeItem("pomodoro_endTime");
-    
+
     if (mode === "work") {
+      sessionCount++;
+      localStorage.setItem("pomodoro_sessionCount", sessionCount);
+
       if (sessionCount % 4 === 0) {
         startMode("long");
       } else {
         startMode("short");
       }
+
+    } else if (mode === "long") {
+      sessionCount = 1; 
+      localStorage.setItem("pomodoro_sessionCount", sessionCount);
+      startMode("work");
+
     } else {
-      if (mode === "short") {
-        sessionCount++;
-        localStorage.setItem("pomodoro_sessionCount", sessionCount); 
-        startMode("work");
-      } else if (mode === "long") {
-        sessionCount = 1;
-        localStorage.setItem("pomodoro_sessionCount", sessionCount); 
-        startMode("work");
-      }
+      startMode("work");
     }
+
     updateDisplay(); 
     startTimer();
   }
 }
 
-
 let startButton = document.querySelector(".start");
 let stopButton = document.querySelector(".stop");
 let resetButton = document.querySelector(".reset");
-let resumeButton = document.querySelector(".resume");
 
 startButton.onclick = startTimer;
 stopButton.onclick = pauseTimer; 
 resetButton.onclick = resetTimer;
-resumeButton.onclick = resumeTimer;
-
 
 function startTimer() {
   if (!running) {
+    clearInterval(timerInterval);
     const now = Date.now();
-    if (!endTime || endTime < now) {
+
+    if (!endTime) {
       endTime = now + (minutes * 60 + seconds) * 1000;
-      saveSettings();
     }
+
     running = true;
+    saveSettings();
     timerInterval = setInterval(tick, 1000);
   }
 }
@@ -123,6 +172,7 @@ function startTimer() {
 function pauseTimer() {
   clearInterval(timerInterval);
   running = false;
+  endTime = null; 
   saveSettings();
 }
 
@@ -131,31 +181,11 @@ function resetTimer() {
   running = false;
   sessionCount = 1;
   endTime = null;
-  localStorage.removeItem("pomodoro_endTime");
-  localStorage.removeItem("pomodoro_sessionCount");
-  localStorage.removeItem("pomodoro_mode");
-  saveSettings();
+  mode = "work";
+  localStorage.clear();
   startMode("work");
 }
 
-function resumeTimer() {
-  if (!running) {
-    const storedEnd = localStorage.getItem("pomodoro_endTime");
-    if (storedEnd) {
-      endTime = parseInt(storedEnd);
-      const now = Date.now();
-      if (endTime > now) {
-        running = true;
-        timerInterval = setInterval(tick, 1000);
-      } else {
-        alert("انتهى الوقت أثناء غيابك، يرجى إعادة الضبط.");
-        resetTimer();
-      }
-    } else {
-      alert("لا يوجد وقت محفوظ للاستئناف، يرجى البدء.");
-    }
-  }
-}
 
 loadSettings();
 

@@ -312,31 +312,33 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   color: var(--font-color);
   border-radius: 6px;
 }
-.landing-page .button button {
+.landing-page .button .cta-button {
   background-color: var(--secondary-color);
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px;
+  min-height: 44px;
+  min-width: 44px;
   font-size: 1.2rem;
   border-radius: 5px;
   cursor: pointer;
   transition-duration: var(--transition-duration);
   position: relative;
   display: flex;
-  align-items:center;
-  justify-content: center;
-}
-.landing-page .button button a {
-  display: flex;
   align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  margin: 8px;
 }
-.landing-page .button button a img {
+
+.landing-page .button .cta-button img {
   width: 40px;
   height: 40px;
   margin-right: 10px;
   transition-duration: var(--transition-duration);
 }
-.landing-page .button button::before,
-.landing-page .button button::after {
+.landing-page .button .cta-button::before,
+.landing-page .button .cta-button::after {
   font-family: var(--font-awesome);
   font-weight: 900;
   position: absolute;
@@ -344,25 +346,23 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   animation-iteration-count: infinite;
   cursor: default;
   pointer-events: none;
+  color: black;
 }
-.landing-page .button button:before {
+.landing-page .button .cta-button:before {
   content: "\f100";
   right: -30px;
   animation-name: go-right;
 }
-.landing-page .button button:after {
+.landing-page .button .cta-button:after {
   left: -30px;
   content: "\f101";
   animation-name: go-left;
 }
-.landing-page .button button:hover {
+.landing-page .button .cta-button:hover {
   background-color: var(--secondary-color-hover);
   box-shadow: 0px 0px 10px #CCC;
 }
-.landing-page .button button a {
-  color: white;
-  text-decoration: none;
-}
+
 .landing-page .container.book-cover {
   background-color: var(--main-color);
   height: 70%;
@@ -455,11 +455,13 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   .landing-page .container p {
     font-size: 1rem;
   }
-  .landing-page .button button {
+  .landing-page .button .cta-button {
     font-size: 1rem;
-    padding: 8px 16px;
+    padding: 10px 18px;
+    min-height: 44px;
+    min-width: 44px;
   }
-  .landing-page .button button:hover {
+  .landing-page .button .cta-button:hover {
     background-color: var(--secondary-color);
     box-shadow: none;
   }
