@@ -51,6 +51,7 @@
     text-align: right;
     color: var(--font-color);
     padding-right: 15px;
+    line-height: 2;
 }
 .about blockquote {
     background: var(--background-color);
