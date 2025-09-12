@@ -1,4 +1,3 @@
-@import url("/css/main.css");
 /* #region Start Pomodoro CSS */
 .timer {
   min-height: calc(100vh - 140px - 90px);
