@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>جدول الروتين اليومي المرن</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/tools.css" />
+</head>
+<body class="tool-body">
+  <div class="table-wrapper">
+    <h1>🔄 جدول الروتين اليومي المرن</h1>
+    <p>🎯 الهدف: تصميم يوم منتظم لكنه غير صارم، يعزز الاستقرار دون ضغط.</p>
+  <hr />
+  <section>
+    <h2>🔹 قائمة العادات/المهام اليومية الثابتة:</h2>
+    <p>✦ ما الأنشطة التي أريد الحفاظ عليها كل يوم؟</p>
+    <textarea name="daily_habit1" placeholder="العادة أو المهمة 1"></textarea>
+    <textarea name="daily_habit2" placeholder="العادة أو المهمة 2"></textarea>
+    <textarea name="daily_habit3" placeholder="العادة أو المهمة 3"></textarea>
+    <textarea name="daily_habit4" placeholder="العادة أو المهمة 4"></textarea>
+  </section>
+  <section>
+    <h2>🔹 تقسيم اليوم إلى فترات:</h2>
+    <p>✦ حدّد الفترات الزمنية المناسبة لك:</p>
+    <table class="time-table" id="flexible-routine-table">
+      <thead>
+        <tr>
+          <th>الفترة</th>
+          <th>من الساعة</th>
+          <th>إلى الساعة</th>
+          <th>نوع الأنشطة المفضلة</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>الصباح الباكر</td>
+          <td><input type="time" name="early_morning_from" step="60" /></td>
+          <td><input type="time" name="early_morning_to" step="60" /></td>
+          <td><input type="text" name="early_morning_activities" placeholder="مثلاً: قراءة، رياضة" /></td>
+        </tr>
+        <tr>
+          <td>الصباح المتأخر</td>
+          <td><input type="time" name="late_morning_from" step="60" /></td>
+          <td><input type="time" name="late_morning_to" step="60" /></td>
+          <td><input type="text" name="late_morning_activities" placeholder="مثلاً: عمل، اجتماع" /></td>
+        </tr>
+        <tr>
+          <td>الظهر</td>
+          <td><input type="time" name="noon_from" step="60" /></td>
+          <td><input type="time" name="noon_to" step="60" /></td>
+          <td><input type="text" name="noon_activities" placeholder="مثلاً: راحة، تناول طعام" /></td>
+        </tr>
+        <tr>
+          <td>بعد الظهر</td>
+          <td><input type="time" name="afternoon_from" step="60" /></td>
+          <td><input type="time" name="afternoon_to" step="60" /></td>
+          <td><input type="text" name="afternoon_activities" placeholder="مثلاً: متابعة مهام" /></td>
+        </tr>
+        <tr>
+          <td>المساء</td>
+          <td><input type="time" name="evening_from" step="60" /></td>
+          <td><input type="time" name="evening_to" step="60" /></td>
+          <td><input type="text" name="evening_activities" placeholder="مثلاً: استرخاء، قراءة" /></td>
+        </tr>
+        <tr>
+          <td>الليل / قبل النوم</td>
+          <td><input type="time" name="night_from" step="60" /></td>
+          <td><input type="time" name="night_to" step="60" /></td>
+          <td><input type="text" name="night_activities" placeholder="مثلاً: تحضير للنوم" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>⚙🔹 القواعد الذهبية:</h2>
+    <ul>
+      <li>لا حاجة للكمال، فقط الاستمرارية</li>
+      <li>يمكن تبديل الفترات إذا اضطررت</li>
+      <li>لا تضف أكثر من ثلاث أنشطة رئيسية في اليوم</li>
+    </ul>
+  </section>
+  <p>📌 هذا الروتين لك، لا عليك. عدّله كما تشاء وراجعه أسبوعيًا.</p>
+    <div class="print-button-wrapper">
+      <button type="button" onclick="window.print()">🖨طباعة النموذج</button>
+    </div>
+  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مخطط متابعة تقدم المشروع</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/tools.css" />
+</head>
+<body class="tool-body">
+  <div class="container" role="main">
+    <h2>📈 مخطط متابعة تقدم المشروع</h2>
+    <p class="description">🎯 <strong>الهدف:</strong> قياس التقدم في مشروعك وتحديد العقبات والخطوات القادمة بوضوح.</p>
+    <hr />
+    <section class="time-table-section">
+      <label for="project-name">📝 1. اسم المشروع:</label>
+      <input type="text" id="project-name" placeholder="اكتب اسم المشروع هنا..." />
+    </section>
+    <section class="time-table-section">
+      <label>النسبة الحالية من الإنجاز:</label>
+      <p class="checklist-desc">✦ قدّر تقديرًا تقريبيًا:</p>
+      <div class="checklist" role="group" aria-label="النسبة الحالية من الإنجاز">
+        <label><input type="checkbox" name="progress" /> 0–10٪ (بداية فقط)</label>
+        <label><input type="checkbox" name="progress" /> 11–30٪ (تقدّم مبدئي)</label>
+        <label><input type="checkbox" name="progress" /> 31–60٪ (منتصف الطريق)</label>
+        <label><input type="checkbox" name="progress" /> 61–90٪ (قرب الاكتمال)</label>
+        <label><input type="checkbox" name="progress" /> 91–100٪ (لمسات نهائية)</label>
+      </div>
+    </section>
+    <section class="time-table-section">
+      <label for="main-obstacle">العقبة الرئيسية حاليًا:</label>
+      <textarea id="main-obstacle" rows="3" placeholder="اكتب العقبة الرئيسية هنا..."></textarea>
+    </section>
+    <section class="time-table-section">
+      <label>سبب التأخير أو التعطّل:</label>
+      <div class="checklist" role="group" aria-label="سبب التأخير أو التعطّل">
+        <label><input type="checkbox" /> عدم وضوح الخطوات</label>
+        <label><input type="checkbox" /> نقص الوقت</label>
+        <label><input type="checkbox" /> تراجع الحماس</label>
+        <div class="inline-input">
+          <label><input type="checkbox" /> صعوبة خارجية (ظرف، شخص،</label>
+          <input type="text" placeholder="اذكر هنا" aria-label="اذكر السبب" />
+          <label>)</label>
+        </div>
+        <div class="inline-input">
+          <label><input type="checkbox" /> أخرى</label>
+          <input type="text" placeholder="حدد السبب" aria-label="حدد السبب" />
+        </div>
+      </div>
+    </section>
+    <section class="time-table-section">
+      <label for="next-step">✦ الخطوة القادمة:</label>
+      <p>حدد خطوة واضحة قابلة للتنفيذ هذا الأسبوع:</p>
+      <textarea id="next-step" rows="3" placeholder="اكتب الخطوة القادمة هنا..."></textarea>
+    </section>
+    <section class="time-table-section">
+      <label for="review-date">موعد المراجعة القادمة:</label>
+      <input type="date" id="review-date" />
+    </section>
+    <p class="note">📌 <strong>الاستمرار في المشروع أهم من السرعة… لا تفقد الزخم، راجع تقدمك كل أسبوع.</strong></p>
+    <div class="print-button-wrapper">
+      <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
+    </div>
+  </div>
+</body>
+</html>
+
+

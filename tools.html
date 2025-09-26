@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="images/time-icon.png">
@@ -14,15 +15,19 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Main CSS file -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- About CSS file -->
+    <link rel="stylesheet" href="css/about.css">
     <!-- Tools CSS file -->
     <link rel="stylesheet" href="css/tools.css">
-    <title>فن ادارة الوقت</title>
+    <title>الجداول والتحديات - فن ادارة الوقت</title>
   </head>
+
   <body>
     <!-- #region Start Header -->
     <header>
       <div class="container">
-        <div class="logo"><a href="index.html" aria-label="شعار الصفحة الرئيسية"><img src="images/logo.png" alt="شعار الصفحة الرئيسية"></a></div>
+        <div class="logo"><a href="index.html" aria-label="شعار الصفحة الرئيسية"><img src="images/logo.png"
+              alt="شعار الصفحة الرئيسية"></a></div>
         <div class="nav-link"><i class="fa-solid fa-bars"></i></div>
         <nav>
           <ul>
@@ -30,6 +35,7 @@
             <li class="chapters-link">
               <a href="chapters.html">الفصول</a>
               <i class="fa-solid fa-angle-down chapters-arrow" role="button" aria-label="عرض الفصول"></i>
+              </i>
               <div class="chapters"></div>
               <div class="mobile-chapters"></div>
             </li>
@@ -41,1717 +47,175 @@
       </div>
     </header>
     <!-- #endregion End Header -->
-    <!-- #region Start Main Section -->
-    <main>
+
+    <!-- #region Start Tools Page -->
+    <div class="tools">
       <div class="container">
-        <!-- Tools Navigation Menu -->
-        <div class="tools-navigation">
-          <div class="nav-header">
-            <h1 class="nav-title">🗂️ فهرس الأدوات والجداول</h1>
-            <p class="nav-subtitle">اختر الفئة المناسبة للوصول للأداة التي تحتاجها</p>
+        <div class="intro">
+          <h1>الجداول والتحديات</h1>
+          <p>مجموعة شاملة من الأدوات العملية والتحديات التفاعلية لمساعدتك في تطبيق مبادئ إدارة الوقت</p>
+        </div>
+
+        <div class="tools-grid">
+          <!-- Time Management Systems -->
+          <div class="category">
+            <h2><i class="fa-solid fa-layer-group"></i> أنظمة إدارة الوقت</h2>
+            <div class="tools-list">
+              <div class="tool-card">
+                <a href="four-layers-system.html" target="_blank">
+                  <i class="fa-solid fa-layer-group"></i>
+                  <h3>نظام الطبقات الأربع</h3>
+                  <p>نموذج تفاعلي لتنظيم يومك وفق أربع طبقات زمنية متوازنة</p>
+                </a>
+              </div>
+              <div class="tool-card">
+                <a href="80-20-rule.html" target="_blank">
+                  <i class="fa-solid fa-chart-pie"></i>
+                  <h3>قاعدة 80/20</h3>
+                  <p>تحليل تفاعلي لتطبيق مبدأ باريتو في إدارة المهام والأولويات</p>
+                </a>
+              </div>
+              <div class="tool-card">
+                <a href="visual-time-map.html" target="_blank">
+                  <i class="fa-solid fa-map"></i>
+                  <h3>خريطة الوقت المصورة</h3>
+                  <p>أداة بصرية لتخطيط وتتبع استخدامك للوقت خلال اليوم</p>
+                </a>
+              </div>
+            </div>
           </div>
-          
-          <div class="nav-categories">
-            <!-- Daily Planning Category -->
-            <div class="nav-category">
-              <h3 class="category-title">
-                <span class="category-icon">📅</span>
-                التخطيط اليومي والروتين
-              </h3>
-              <div class="category-tools">
-                <a href="#four-layers" class="tool-link">
-                  <span class="tool-icon">📋</span>
-                  <div class="tool-info">
-                    <h4>نظام الطبقات الأربع</h4>
-                    <p>لإدارة اليوم بتوازن</p>
-                  </div>
+
+          <!-- Daily Planning Tools -->
+          <div class="category">
+            <h2><i class="fa-solid fa-calendar-days"></i> أدوات التخطيط اليومي</h2>
+            <div class="tools-list">
+              <div class="tool-card">
+                <a href="flexible-daily-routine.html" target="_blank">
+                  <i class="fa-solid fa-clock"></i>
+                  <h3>الروتين اليومي المرن</h3>
+                  <p>جدول تفاعلي لبناء روتين يومي قابل للتخصيص والتعديل</p>
                 </a>
-                <a href="#core-task" class="tool-link">
-                  <span class="tool-icon">🎯</span>
-                  <div class="tool-info">
-                    <h4>المهمة الجوهرية</h4>
-                    <p>تحديد أهم مهمة لليوم</p>
-                  </div>
+              </div>
+              <div class="tool-card">
+                <a href="core-task-identification.html" target="_blank">
+                  <i class="fa-solid fa-bullseye"></i>
+                  <h3>تحديد المهمة الجوهرية</h3>
+                  <p>أداة تساعدك على تحديد أهم مهمة في يومك والتركيز عليها</p>
                 </a>
-                <a href="#flexible-routine" class="tool-link">
-                  <span class="tool-icon">🔄</span>
-                  <div class="tool-info">
-                    <h4>الروتين المرن</h4>
-                    <p>جدول يومي قابل للتكيف</p>
-                  </div>
+              </div>
+              <div class="tool-card">
+                <a href="task-distribution-planner.html" target="_blank">
+                  <i class="fa-solid fa-tasks"></i>
+                  <h3>مخطط توزيع المهام</h3>
+                  <p>نظام ذكي لتوزيع المهام على فترات اليوم حسب طاقتك وتركيزك</p>
                 </a>
               </div>
             </div>
+          </div>
 
-            <!-- Habits & Challenges Category -->
-            <div class="nav-category">
-              <h3 class="category-title">
-                <span class="category-icon">🏆</span>
-                العادات والتحديات
-              </h3>
-              <div class="category-tools">
-                <a href="#habit-design" class="tool-link">
-                  <span class="tool-icon">⚙️</span>
-                  <div class="tool-info">
-                    <h4>تصميم العادة</h4>
-                    <p>بناء عادات صحية</p>
-                  </div>
+          <!-- Challenges -->
+          <div class="category">
+            <h2><i class="fa-solid fa-trophy"></i> التحديات التفاعلية</h2>
+            <div class="tools-list">
+              <div class="tool-card">
+                <a href="72-hour-digital-detox-challenge.html" target="_blank">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <h3>تحدي 72 ساعة بلا تشتيت رقمي</h3>
+                  <p>تحدي عملي للتحرر من إدمان الهاتف والشاشات لمدة 3 أيام</p>
                 </a>
-                <a href="#habit-challenge" class="tool-link">
-                  <span class="tool-icon">🏆</span>
-                  <div class="tool-info">
-                    <h4>تحدي 7×3</h4>
-                    <p>لبناء العادات في 21 يوم</p>
-                  </div>
+              </div>
+              <div class="tool-card">
+                <a href="21-day-habit-building-challenge.html" target="_blank">
+                  <i class="fa-solid fa-seedling"></i>
+                  <h3>تحدي بناء العادات 21 يوم</h3>
+                  <p>برنامج تدريجي لبناء عادات إيجابية خلال 21 يومًا</p>
                 </a>
-                <a href="#digital-detox" class="tool-link">
-                  <span class="tool-icon">📱</span>
-                  <div class="tool-info">
-                    <h4>التخلص من التشتيت</h4>
-                    <p>تحدي 72 ساعة بلا تشتيت</p>
-                  </div>
+              </div>
+              <div class="tool-card">
+                <a href="procrastination-confrontation.html" target="_blank">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <h3>ورقة مواجهة التسويف</h3>
+                  <p>أداة فعالة للتعامل مع المماطلة وتحفيز النفس للعمل</p>
                 </a>
               </div>
             </div>
+          </div>
 
-            <!-- Problem Solving Category -->
-            <div class="nav-category">
-              <h3 class="category-title">
-                <span class="category-icon">⚡</span>
-                حل المشاكل والتحليل
-              </h3>
-              <div class="category-tools">
-                <a href="#procrastination" class="tool-link">
-                  <span class="tool-icon">⚡</span>
-                  <div class="tool-info">
-                    <h4>مواجهة المماطلة</h4>
-                    <p>للتخلص من التأجيل</p>
-                  </div>
+          <!-- Habit & Self Development -->
+          <div class="category">
+            <h2><i class="fa-solid fa-user-check"></i> تطوير العادات والذات</h2>
+            <div class="tools-list">
+              <div class="tool-card">
+                <a href="habit-design.html" target="_blank">
+                  <i class="fa-solid fa-cogs"></i>
+                  <h3>نموذج تصميم العادة</h3>
+                  <p>مخطط علمي لتصميم عادات جديدة بطريقة مدروسة وفعالة</p>
                 </a>
-                <a href="#time-map" class="tool-link">
-                  <span class="tool-icon">🗺️</span>
-                  <div class="tool-info">
-                    <h4>خريطة الوقت</h4>
-                    <p>تصور مشاكل إدارة الوقت</p>
-                  </div>
+              </div>
+              <div class="tool-card">
+                <a href="self-accountability.html" target="_blank">
+                  <i class="fa-solid fa-scale-balanced"></i>
+                  <h3>محاسبة النفس</h3>
+                  <p>تمرين يومي لمراجعة وتقييم إنجازاتك وتطوير أدائك</p>
                 </a>
-                <a href="#pareto" class="tool-link">
-                  <span class="tool-icon">📊</span>
-                  <div class="tool-info">
-                    <h4>قاعدة 80/20</h4>
-                    <p>التركيز على الأهم</p>
-                  </div>
+              </div>
+              <div class="tool-card">
+                <a href="return-day.html" target="_blank">
+                  <i class="fa-solid fa-arrow-rotate-left"></i>
+                  <h3>نموذج يوم العودة</h3>
+                  <p>خطة عملية للعودة إلى المسار الصحيح بعد فترات التراجع</p>
                 </a>
               </div>
             </div>
+          </div>
 
-            <!-- Tracking & Review Category -->
-            <div class="nav-category">
-              <h3 class="category-title">
-                <span class="category-icon">📊</span>
-                المتابعة والمراجعة
-              </h3>
-              <div class="category-tools">
-                <a href="#accountability" class="tool-link">
-                  <span class="tool-icon">🔍</span>
-                  <div class="tool-info">
-                    <h4>محاسبة النفس</h4>
-                    <p>مراجعة يومية للذات</p>
-                  </div>
-                </a>
-                <a href="#return-day" class="tool-link">
-                  <span class="tool-icon">↩️</span>
-                  <div class="tool-info">
-                    <h4>يوم العودة</h4>
-                    <p>للعودة للمسار الصحيح</p>
-                  </div>
-                </a>
-                <a href="#task-distribution" class="tool-link">
-                  <span class="tool-icon">�</span>
-                  <div class="tool-info">
-                    <h4>توزيع المهام</h4>
-                    <p>مخطط متابعة التقدم</p>
-                  </div>
+          <!-- Project & Relationship Management -->
+          <div class="category">
+            <h2><i class="fa-solid fa-diagram-project"></i> إدارة المشاريع والعلاقات</h2>
+            <div class="tools-list">
+              <div class="tool-card">
+                <a href="your-big-project.html" target="_blank">
+                  <i class="fa-solid fa-rocket"></i>
+                  <h3>مشروعك الكبير</h3>
+                  <p>نموذج شامل لتخطيط وتنفيذ مشاريعك الطموحة خطوة بخطوة</p>
                 </a>
               </div>
-            </div>
-
-            <!-- Planning & Organization Category -->
-            <div class="nav-category">
-              <h3 class="category-title">
-                <span class="category-icon">🚀</span>
-                التخطيط والتنظيم
-              </h3>
-              <div class="category-tools">
-                <a href="#meetings" class="tool-link">
-                  <span class="tool-icon">📞</span>
-                  <div class="tool-info">
-                    <h4>تنظيم اللقاءات</h4>
-                    <p>جدولة المكالمات والاجتماعات</p>
-                  </div>
+              <div class="tool-card">
+                <a href="project-progress-tracker.html" target="_blank">
+                  <i class="fa-solid fa-chart-line"></i>
+                  <h3>مخطط متابعة تقدم المشروع</h3>
+                  <p>أداة تفاعلية لمتابعة تطور مشاريعك وقياس معدل الإنجاز</p>
                 </a>
-                <a href="#big-project" class="tool-link">
-                  <span class="tool-icon">🚀</span>
-                  <div class="tool-info">
-                    <h4>المشروع الكبير</h4>
-                    <p>تخطيط الأهداف الطويلة</p>
-                  </div>
+              </div>
+              <div class="tool-card">
+                <a href="relationship-circles.html" target="_blank">
+                  <i class="fa-solid fa-users"></i>
+                  <h3>دوائر العلاقات</h3>
+                  <p>نظام بصري لتنظيم علاقاتك وتوزيع وقتك بين الأشخاص المهمين</p>
                 </a>
-                <a href="#relationships" class="tool-link">
-                  <span class="tool-icon">�</span>
-                  <div class="tool-info">
-                    <h4>دوائر العلاقات</h4>
-                    <p>تنظيم العلاقات الشخصية</p>
-                  </div>
+              </div>
+              <div class="tool-card">
+                <a href="meetings-and-calls-organizer.html" target="_blank">
+                  <i class="fa-solid fa-phone"></i>
+                  <h3>منظم اللقاءات والمكالمات</h3>
+                  <p>جدول أسبوعي لتنظيم مواعيد اللقاءات والمكالمات المهمة</p>
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="table-wrapper" id="four-layers" role="main">
-          <h1 class="table-title">نموذج نظام الطبقات الأربع لإدارة اليوم</h1>
-          <p class="table-subtitle">🎯 الهدف: تقسيم اليوم إلى أربع طبقات تساعدك على تحقيق التوازن بين المهام الذهنية، الاجتماعية، الجسدية، والروحية.</p>
-
-          <!-- الطبقة الأولى -->
-          <section class="form-section">
-            <label for="core-tasks">الطبقة الأولى – المهام الجوهرية:</label>
-            <p>✦ ما المهام الأساسية التي لا يجوز تأجيلها اليوم؟</p>
-            <input type="text" id="core-tasks-1" placeholder="المهمة الأساسية 1">
-            <input type="text" id="core-tasks-2" placeholder="المهمة الأساسية 2">
-            <input type="text" id="core-tasks-3" placeholder="المهمة الأساسية 3">
-          </section>
-
-          <!-- الطبقة الثانية -->
-          <section class="form-section">
-            <label for="relations">الطبقة الثانية – العلاقات والروابط:</label>
-            <p>✦ من الأشخاص الذين أحتاج أن أتواصل معهم أو أُعبّر لهم؟</p>
-            <input type="text" id="relations-1" placeholder="الشخص 1">
-            <input type="text" id="relations-2" placeholder="الشخص 2">
-            <input type="text" id="relations-3" placeholder="الشخص 3">
-          </section>
-
-          <!-- الطبقة الثالثة -->
-          <section class="form-section">
-            <label for="body-energy">الطبقة الثالثة – الجسد والطاقة:</label>
-            <p>✦ ما النشاط الجسدي أو الاستراحة التي سأمنحها لنفسي؟</p>
-            <textarea id="body-energy-1" placeholder="نشاط جسدي أو استراحة 1"></textarea>
-            <textarea id="body-energy-2" placeholder="نشاط جسدي أو استراحة 2"></textarea>
-            <p>✦ ماذا عن الطعام، الماء، والنوم؟</p>
-            <textarea id="body-energy-3" placeholder="ملاحظات عن الطعام، الماء، النوم"></textarea>
-            <textarea id="body-energy-4" placeholder="ملاحظات إضافية"></textarea>
-          </section>
-
-          <!-- الطبقة الرابعة -->
-          <section class="form-section">
-            <label for="spirit">الطبقة الرابعة – الروح والتأمل:</label>
-            <p>✦ لحظة صمت، دعاء، قراءة، سجدة، تأمل...</p>
-            <textarea id="spirit" placeholder="ما ترغب به من لحظة روحية"></textarea>
-          </section>
-
-          <p class="reminder">📌 يمكنك طباعة هذا النموذج يوميًا أو استخدامه رقميًا لهيكلة يومك بلا فوضى.</p>
-
-          <div class="print-button-wrapper">
-            <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
-          </div>
-        </div>
-
-        <!-- نموذج تحديد المهمة الجوهرية -->
-        <div class="time-table" id="core-task" role="main">
-          <h1>🎯 تحديد المهمة الجوهرية لليوم</h1>
-          <p class="goal">🎯 الهدف: مساعدة نفسك على التركيز على أهم مهمة في يومك، مهما تعددت المهام.</p>
-          <hr class="divider" />
-
-          <section class="task-section">
-            <h2>🔷 ما هي المهمة الجوهرية لليوم؟</h2>
-            <p>✦ اختر مهمة واحدة فقط، إن أتممتها، ستشعر بأن اليوم لم يذهب سدى.</p>
-            <textarea rows="3" placeholder="اكتب مهمتك الجوهرية هنا..."></textarea>
-          </section>
-
-          <section class="task-section">
-            <h2>🔷 لماذا هي جوهرية؟</h2>
-            <p>✦ ما أثرها؟ ما علاقتها بهدف أكبر؟</p>
-            <textarea rows="3" placeholder="اشرح سبب أهميتها..."></textarea>
-          </section>
-
-          <section class="task-section">
-            <h2>🔷 متى أنفذها؟ 🕒</h2>
-            <label class="radio-label"><input type="radio" name="execution-time" value="morning" /> صباحًا (قبل أي شيء آخر)</label>
-            <label class="radio-label"><input type="radio" name="execution-time" value="midday" /> منتصف اليوم</label>
-            <label class="radio-label"><input type="radio" name="execution-time" value="evening" /> مساءً</label>
-            <label class="radio-label custom-time">
-              <input type="radio" name="execution-time" value="after" />
-              بعد:
-              <input type="text" class="inline-input" placeholder="حدد بعد ماذا..." />
-            </label>
-          </section>
-
-          <section class="task-section">
-            <h2>🔷 ما أول خطوة صغيرة لبدء المهمة؟</h2>
-            <textarea rows="2" placeholder="حدد أول خطوة..."></textarea>
-          </section>
-
-          <section class="task-section">
-            <h2>🔷 كيف سأشعر بعد إنجازها؟</h2>
-            <textarea rows="2" placeholder="توقع شعورك بعد الإنجاز..."></textarea>
-          </section>
-
-          <p class="note">📌 استخدم هذا النموذج كل صباح، لتدريب دماغك على التركيز بدل التشتت.</p>
-
-          <div class="print-button-wrapper">
-            <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
-          </div>
-        </div>
-
-        <!-- جدول الروتين اليومي المرن -->
-        <div class="routine-table" id="flexible-routine" role="main">
-          <h1>🔄 جدول الروتين اليومي المرن</h1>
-          <p class="goal">🎯 الهدف: تصميم يوم منتظم لكنه غير صارم، يعزز الاستقرار دون ضغط.</p>
-          <hr class="divider" />
-
-          <section class="routine-section">
-            <h2>🔹 قائمة العادات/المهام اليومية الثابتة:</h2>
-            <p>✦ ما الأنشطة التي أريد الحفاظ عليها كل يوم؟</p>
-            <textarea name="daily_habit1" placeholder="العادة أو المهمة 1"></textarea>
-            <textarea name="daily_habit2" placeholder="العادة أو المهمة 2"></textarea>
-            <textarea name="daily_habit3" placeholder="العادة أو المهمة 3"></textarea>
-            <textarea name="daily_habit4" placeholder="العادة أو المهمة 4"></textarea>
-          </section>
-
-          <section class="routine-section">
-            <h2>🔹 تقسيم اليوم إلى فترات:</h2>
-            <p>✦ حدّد الفترات الزمنية المناسبة لك:</p>
-            <table class="schedule-table" id="flexible-routine-table">
-              <thead>
-                <tr>
-                  <th>الفترة</th>
-                  <th>من الساعة</th>
-                  <th>إلى الساعة</th>
-                  <th>نوع الأنشطة المفضلة</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>الصباح الباكر</td>
-                  <td><input type="time" name="early_morning_from" step="60" /></td>
-                  <td><input type="time" name="early_morning_to" step="60" /></td>
-                  <td><input type="text" name="early_morning_activities" placeholder="مثلاً: قراءة، رياضة" /></td>
-                </tr>
-                <tr>
-                  <td>الصباح المتأخر</td>
-                  <td><input type="time" name="late_morning_from" step="60" /></td>
-                  <td><input type="time" name="late_morning_to" step="60" /></td>
-                  <td><input type="text" name="late_morning_activities" placeholder="مثلاً: عمل، اجتماع" /></td>
-                </tr>
-                <tr>
-                  <td>الظهر</td>
-                  <td><input type="time" name="noon_from" step="60" /></td>
-                  <td><input type="time" name="noon_to" step="60" /></td>
-                  <td><input type="text" name="noon_activities" placeholder="مثلاً: راحة، تناول طعام" /></td>
-                </tr>
-                <tr>
-                  <td>بعد الظهر</td>
-                  <td><input type="time" name="afternoon_from" step="60" /></td>
-                  <td><input type="time" name="afternoon_to" step="60" /></td>
-                  <td><input type="text" name="afternoon_activities" placeholder="مثلاً: متابعة مهام" /></td>
-                </tr>
-                <tr>
-                  <td>المساء</td>
-                  <td><input type="time" name="evening_from" step="60" /></td>
-                  <td><input type="time" name="evening_to" step="60" /></td>
-                  <td><input type="text" name="evening_activities" placeholder="مثلاً: استرخاء، قراءة" /></td>
-                </tr>
-                <tr>
-                  <td>الليل / قبل النوم</td>
-                  <td><input type="time" name="night_from" step="60" /></td>
-                  <td><input type="time" name="night_to" step="60" /></td>
-                  <td><input type="text" name="night_activities" placeholder="مثلاً: تحضير للنوم" /></td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-
-          <section class="routine-section">
-            <h2>⚙🔹 القواعد الذهبية:</h2>
-            <ul class="golden-rules">
-              <li>لا حاجة للكمال، فقط الاستمرارية</li>
-              <li>يمكن تبديل الفترات إذا اضطررت</li>
-              <li>لا تضف أكثر من ثلاث أنشطة رئيسية في اليوم</li>
-            </ul>
-          </section>
-
-          <p class="note">📌 هذا الروتين لك، لا عليك. عدّله كما تشاء وراجعه أسبوعيًا.</p>
-
-          <div class="print-button-wrapper">
-            <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
-          </div>
-        </div>
-
-        <!-- نموذج تصميم العادة -->
-        <div class="habit-design-wrapper" id="habit-design" role="main">
-          <h1 class="table-title">نموذج تصميم العادة</h1>
-          <p class="habit-subtitle">🎯 الهدف: مساعدتك في بناء عادة جديدة بطريقة عملية، مرنة، قابلة للتقييم.</p>
-
-          <!-- تعريف العادة -->
-          <div class="habit-form-section">
-            <label class="habit-label">ما العادة التي أريد بناءها؟</label>
-            <input type="text" class="habit-input" />
-
-            <label class="habit-label">ما الهدف من هذه العادة؟ ولماذا أريدها؟</label>
-            <textarea class="habit-textarea" rows="2"></textarea>
-          </div>
-
-          <!-- توقيت العادة -->
-          <div class="habit-form-section">
-            <label class="habit-label">توقيت العادة:</label>
-            <div class="habit-checkbox-group">
-              <label class="habit-checkbox-label"><input type="checkbox" /> صباحًا</label>
-              <label class="habit-checkbox-label"><input type="checkbox" /> ظهرًا</label>
-              <label class="habit-checkbox-label"><input type="checkbox" /> مساءً</label>
-              <label class="habit-checkbox-label">
-                <input type="checkbox" id="after-existing-checkbox" /> بعد عادة حالية
-              </label>
-            </div>
-            <input type="text" id="existing-habit-input" class="habit-input hidden" placeholder="اذكر العادة الحالية" />
-          </div>
-
-          <!-- نوع التحفيز -->
-          <div class="habit-form-section">
-            <label class="habit-label">نوع التحفيز:</label>
-            <div class="habit-checkbox-group">
-              <label class="habit-checkbox-label"><input type="checkbox" /> سعادة/متعة بعد الإنجاز</label>
-              <label class="habit-checkbox-label"><input type="checkbox" /> تتبع (أضع ✔ بعد الإنجاز)</label>
-              <label class="habit-checkbox-label">
-                <input type="checkbox" id="small-reward-checkbox" /> مكافأة صغيرة
-              </label>
-            </div>
-            <input type="text" id="reward-description-input" class="habit-input hidden" placeholder="صف المكافأة الصغيرة التي ستعطيها لنفسك" />
-          </div>
-
-          <!-- جدول التكرار -->
-          <div class="habit-form-section">
-            <label class="habit-label">جدول التكرار:</label>
-            <table class="habit-tracking-table">
-              <thead>
-                <tr>
-                  <th>اليوم</th>
-                  <th>تم التنفيذ؟ ✔</th>
-                  <th class="wide-column">ملاحظات</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td>السبت</td><td><input type="checkbox" /></td><td><textarea class="table-textarea"></textarea></td></tr>
-                <tr><td>الأحد</td><td><input type="checkbox" /></td><td><textarea class="table-textarea"></textarea></td></tr>
-                <tr><td>الاثنين</td><td><input type="checkbox" /></td><td><textarea class="table-textarea"></textarea></td></tr>
-                <tr><td>الثلاثاء</td><td><input type="checkbox" /></td><td><textarea class="table-textarea"></textarea></td></tr>
-                <tr><td>الأربعاء</td><td><input type="checkbox" /></td><td><textarea class="table-textarea"></textarea></td></tr>
-                <tr><td>الخميس</td><td><input type="checkbox" /></td><td><textarea class="table-textarea"></textarea></td></tr>
-                <tr><td>الجمعة</td><td><input type="checkbox" /></td><td><textarea class="table-textarea"></textarea></td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <!-- المراجعة الأسبوعية -->
-          <div class="habit-form-section">
-            <label class="habit-label">ما الذي نجح؟</label>
-            <textarea class="habit-textarea" rows="2"></textarea>
-
-            <label class="habit-label">ما الذي أعاق التنفيذ؟</label>
-            <textarea class="habit-textarea" rows="2"></textarea>
-
-            <label class="habit-label">ما التعديل الذي سأجربه الأسبوع القادم؟</label>
-            <textarea class="habit-textarea" rows="2"></textarea>
-          </div>
-
-          <p class="habit-reminder">📢 تذكير: لا تركز على الكمال، بل على التكرار.</p>
-
-          <div class="print-button-wrapper">
-            <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
-          </div>
-        </div>
-
-        <!-- تحدي 21 يوم لبناء العادات -->
-        <div class="challenge-21-wrapper" id="habit-challenge" role="main">
-          <h1>🎯 تحدي 7×3 لبناء العادات</h1>
-          <p class="goal">🎯 الهدف: ترسيخ عادة جديدة خلال 21 يومًا، بتقسيمها إلى ثلاث مراحل أسبوعية.</p>
-          <hr class="divider" />
-
-          <h2>🔹 المرحلة الأولى – التأسيس (الأيام 1 إلى 7):</h2>
-          <p>✦ التركيز فقط على تنفيذ العادة دون شروط أو تقييم.</p>
-          <table class="challenge-table">
-            <thead>
-              <tr>
-                <th>اليوم</th>
-                <th>الإنجاز (✔/✘)</th>
-                <th>ملاحظة سريعة</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h2>🔹 المرحلة الثانية – التثبيت (الأيام 8 إلى 14):</h2>
-          <p>✦ ربط العادة بسياق محدد أو وقت ثابت (بعد الصلاة، بعد الغداء...)</p>
-          <table class="challenge-table">
-            <thead>
-              <tr>
-                <th>اليوم</th>
-                <th>الإنجاز (✔/✘)</th>
-                <th>ملاحظة سريعة</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>8</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>13</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>14</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h2>🔹 المرحلة الثالثة – التثبيت الذكي (الأيام 15 إلى 21):</h2>
-          <p>✦ إدماج العادة ضمن يومك رغم تغيّر الظروف (تدريب على المرونة)</p>
-          <table class="challenge-table">
-            <thead>
-              <tr>
-                <th>اليوم</th>
-                <th>الإنجاز (✔/✘)</th>
-                <th>ملاحظة سريعة</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>15</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>16</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>17</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خط�</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>18</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>19</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>20</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-              <tr>
-                <td>21</td>
-                <td>
-                  <select class="achievement-select">
-                    <option value=""></option>
-                    <option value="✔">✔ صح</option>
-                    <option value="✘">✘ خطأ</option>
-                  </select>
-                </td>
-                <td contenteditable="true" class="editable-cell"></td>
-              </tr>
-            </tbody>
-          </table>
-
-          <div class="challenge-note">
-            📌 عند إتمام هذا التحدي، تكون قد قطعت شوطًا حقيقيًا نحو عادة راسخة. لا تطارد الكمال، طارد الاستمرارية.
-          </div>
-
-          <div class="print-button-wrapper">
-            <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
-          </div>
-        </div>
-
-        <!-- ورقة مواجهة التسويف -->
-        <div class="procrastination-wrapper" id="procrastination" role="main">
-          <h1>ورقة مواجهة المماطلة</h1>
-          <p class="goal">🎯 الهدف: مساعدتك على كسر التسويف والبدء الفعلي في المهام المؤجلة.</p>
-          <hr class="divider" />
-
-          <section class="proc-section">
-            <label class="proc-label" for="task">🔹 المهمة المؤجلة:</label>
-            <textarea class="proc-textarea" id="task" placeholder="ما المهمة التي أستمر في تأجيلها، رغم معرفتي بأهميتها؟"></textarea>
-          </section>
-
-          <section class="proc-section">
-            <label class="proc-label">🔹 ما الذي يجعلني أهرب منها؟</label>
-            <p class="proc-subtitle">✦ ضع ✔ عند الأسباب المحتملة، أو أضف سببك الخاص:</p>
-            <div class="proc-checkboxes">
-              <label class="proc-checkbox-label"><input type="checkbox" /> مملة</label>
-              <label class="proc-checkbox-label"><input type="checkbox" /> معقدة أو غير واضحة</label>
-              <label class="proc-checkbox-label"><input type="checkbox" /> لا أعرف من أين أبدأ</label>
-              <label class="proc-checkbox-label"><input type="checkbox" /> أخاف من الفشل أو الرفض</label>
-              <label class="proc-checkbox-label"><input type="checkbox" /> لا وقت كافٍ</label>
-              <label class="proc-checkbox-label"><input type="checkbox" /> مزاجي لا يساعد</label>
-              <label class="proc-checkbox-label"><input type="checkbox" /> سبب آخر 
-                <input type="text" class="proc-custom-input" placeholder="أضف السبب هنا" />
-              </label>
-            </div>
-          </section>
-
-          <section class="proc-section">
-            <label class="proc-label" for="negativeThought">🔹 ماذا لو بدأت الآن؟</label>
-            <p class="proc-subtitle">✦ ما الفكرة السلبية التي تمنعني؟</p>
-            <textarea class="proc-textarea" id="negativeThought" placeholder="اكتب الفكرة السلبية..."></textarea>
-          </section>
-
-          <section class="proc-section">
-            <label class="proc-label" for="positiveTruth">✦ ما الحقيقة المضادة التي أؤمن بها؟</label>
-            <textarea class="proc-textarea" id="positiveTruth" placeholder="اكتب الحقيقة المضادة..."></textarea>
-          </section>
-
-          <section class="proc-section">
-            <label class="proc-label" for="rescueStep">✅🔹 خطوة الإنقاذ:</label>
-            <p class="proc-subtitle">✦ ما أول خطوة صغيرة جدًا يمكنني القيام بها خلال 5 دقائق فقط؟</p>
-            <textarea class="proc-textarea" id="rescueStep" placeholder="حدد الخطوة الصغيرة..."></textarea>
-          </section>
-
-          <section class="proc-section">
-            <label class="proc-label">🔹 موعد الانطلاق:</label>
-            <p class="proc-subtitle">✦ متى أبدأ؟ حدد وقتًا واضحًا.</p>
-            <div class="proc-timing">
-              <label class="proc-time-label">🕒 الساعة: 
-                <input type="text" class="proc-time-input" placeholder="00:00" />
-              </label>
-              <label class="proc-checkbox-label"><input type="checkbox" /> فورًا</label>
-            </div>
-          </section>
-
-          <p class="proc-note">
-            📌 لا تنتظر أن تختفي المماطلة لتبدأ… بل ابدأ لتختفي المماطلة.
-          </p>
-
-          <div class="print-button-wrapper">
-            <button type="button" onclick="window.print()">🖨️ طباعة الورقة</button>
-          </div>
-        </div>
-
-        <!-- تحدي 72 ساعة بلا تشتيت رقمي -->
-        <div class="digital-detox-wrapper" id="digital-detox" role="main">
-          <h1>تحدي 72 ساعة بلا تشتيت رقمي</h1>
-          <p class="goal">🎯 الهدف: تجربة حياة أكثر وعيًا وإنتاجية عبر تقليل الاستخدام العشوائي للأجهزة.</p>
-          <hr class="divider" />
-
-          <section class="detox-section">
-            <label class="detox-label">الأجهزة والتطبيقات المستهدفة:</label>
-            <p class="detox-subtitle">✦ ما أكثر مصادر التشتت لدي؟ (اختر 2 إلى 4 عناصر رئيسية)</p>
-            <div class="detox-checkboxes">
-              <label class="detox-checkbox-label"><input type="checkbox" /> الهاتف عمومًا</label>
-              <label class="detox-checkbox-label"><input type="checkbox" /> وسائل التواصل الاجتماعي</label>
-              <label class="detox-checkbox-label"><input type="checkbox" /> اليوتيوب / الفيديوهات القصيرة</label>
-              <label class="detox-checkbox-label"><input type="checkbox" /> التطبيقات الإخبارية</label>
-              <label class="detox-checkbox-label"><input type="checkbox" /> التنقل بين البريد والتطبيقات</label>
-            </div>
-          </section>
-
-          <section class="detox-section">
-            <label class="detox-label">قواعد التحدي:</label>
-            <div class="detox-rules">
-              <div class="detox-rule-box">لا فتح تلقائي لأي تطبيق مشتّت بدون نية مسبقة</div>
-              <div class="detox-rule-box">استخدام الهاتف فقط وقت الحاجة أو بمدة مؤقتة</div>
-              <div class="detox-rule-box">إيقاف التنبيهات غير الضرورية</div>
-              <div class="detox-rule-box">تخصيص وقت محدد واحد فقط للاستخدام الخفيف</div>
-            </div>
-          </section>
-
-          <section class="detox-section">
-            <label class="detox-label">جدول المتابعة لثلاثة أيام:</label>
-            <table class="detox-table">
-              <thead>
-                <tr>
-                  <th>اليوم</th>
-                  <th>عدد مرات التشتت</th>
-                  <th>أكثر لحظة ضعف</th>
-                  <th>كيف تعاملت معها؟</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>اليوم الأول</td>
-                  <td><input type="number" min="0" class="detox-number-input" /></td>
-                  <td><textarea class="detox-table-textarea"></textarea></td>
-                  <td><textarea class="detox-table-textarea"></textarea></td>
-                </tr>
-                <tr>
-                  <td>اليوم الثاني</td>
-                  <td><input type="number" min="0" class="detox-number-input" /></td>
-                  <td><textarea class="detox-table-textarea"></textarea></td>
-                  <td><textarea class="detox-table-textarea"></textarea></td>
-                </tr>
-                <tr>
-                  <td>اليوم الثالث</td>
-                  <td><input type="number" min="0" class="detox-number-input" /></td>
-                  <td><textarea class="detox-table-textarea"></textarea></td>
-                  <td><textarea class="detox-table-textarea"></textarea></td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-
-          <section class="detox-section">
-            <label class="detox-label" for="detox-observations">ماذا لاحظت؟</label>
-            <textarea class="detox-textarea" id="detox-observations" rows="4" placeholder="ملاحظاتك"></textarea>
-          </section>
-
-          <p class="detox-note">📌 التحدي ليس في حذف التطبيقات، بل في استعادة وعيك الزمني والسيطرة الداخلية</p>
-
-          <div class="print-button-wrapper">
-            <button type="button" onclick="window.print()">🖨️ طباعة الورقة</button>
-          </div>
-        </div>
-
-        <!-- خريطة الوقت المصورة -->
-        <div class="time-map-wrapper" id="time-map" role="main">
-          <h1>🗺 خريطة الوقت المصوّرة</h1>
-          <p class="goal">🎯 الهدف: إعطاء نظرة شاملة على العناصر التي تشكّل إدارتك للوقت، وما يجب موازنته أو تحسينه.</p>
-          <hr class="divider" />
-
-          <section class="time-map-section">
-            <h2>أركان إدارة الوقت الشخصية</h2>
-            <div class="time-map-checklist">
-              <label class="time-map-checkbox-label"><input type="checkbox" /> الهدف الأسبوعي</label>
-              <label class="time-map-checkbox-label"><input type="checkbox" /> الروتين اليومي</label>
-              <label class="time-map-checkbox-label"><input type="checkbox" /> العادات الصغيرة</label>
-              <label class="time-map-checkbox-label"><input type="checkbox" /> المشاريع الجارية</label>
-              <label class="time-map-checkbox-label"><input type="checkbox" /> العلاقات واللقاءات</label>
-              <label class="time-map-checkbox-label"><input type="checkbox" /> أوقات الصمت والراحة</label>
-            </div>
-          </section>
-
-          <section class="time-map-section">
-            <h2>مصادر هدر الوقت</h2>
-            <div class="time-map-checklist">
-              <label class="time-map-checkbox-label"><input type="checkbox" /> التشتت الرقمي (جوال، تنقل بين مهام)</label>
-              <label class="time-map-checkbox-label"><input type="checkbox" /> الاجتماعات غير الضرورية</label>
-              <label class="time-map-checkbox-label"><input type="checkbox" /> الاستجابات العاجلة لطلبات الآخرين</label>
-              <label class="time-map-checkbox-label"><input type="checkbox" /> مهام بلا أثر حقيقي</label>
-            </div>
-          </section>
-
-          <section class="time-map-section">
-            <h2>مجالات الطاقة</h2>
-            <div class="time-map-checklist">
-              <label class="time-map-checkbox-label"><input type="checkbox" /> ذهنية (التركيز، التعلّم)</label>
-              <label class="time-map-checkbox-label"><input type="checkbox" /> جسدية (النوم، الحركة، التغذية)</label>
-              <label class="time-map-checkbox-label"><input type="checkbox" /> روحية (الصلاة، التأمل، القراءة)</label>
-              <label class="time-map-checkbox-label"><input type="checkbox" /> اجتماعية (العائلة، الأصدقاء)</label>
-            </div>
-          </section>
-
-          <section class="time-map-section">
-            <h2>بوصلة القرار الزمني</h2>
-            <div class="time-map-questions">
-              <div class="question-group">
-                <p class="question-text">• ما الذي يستحق وقتي؟</p>
-                <textarea class="time-map-textarea" rows="3" placeholder="ملاحظات..."></textarea>
-              </div>
-              <div class="question-group">
-                <p class="question-text">• ما الذي يمكن تفويضه؟</p>
-                <textarea class="time-map-textarea" rows="3" placeholder="ملاحظات..."></textarea>
-              </div>
-              <div class="question-group">
-                <p class="question-text">• ما الذي يجب حذفه نهائيًا؟</p>
-                <textarea class="time-map-textarea" rows="3" placeholder="ملاحظات..."></textarea>
-              </div>
-            </div>
-          </section>
-
-          <p class="time-map-note">📌 يمكن تحويل هذه الخريطة إلى إنفوجرافيك دائري أو بصري، تُطبع وتُراجع أسبوعيًا.</p>
-
-          <div class="print-button-wrapper">
-            <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
-          </div>
-        </div>
-
-        <!-- تمرين محاسبة ما قبل النوم -->
-        <div class="accountability-wrapper" id="accountability" role="main">
-          <h1>🌙 تمرين "محاسبة ما قبل النوم – لحظة صفاء"</h1>
-          <p class="goal">🎯 الهدف: مراجعة هادئة للذات قبل النوم، لتعزيز الوعي، والتحسّن التدريجي.</p>
-          <hr class="divider" />
-
-          <section class="accountability-section">
-            <label class="accountability-label" for="today-accomplished">🔸 ما الذي أنجزته اليوم؟</label>
-            <textarea class="accountability-textarea" rows="3" id="today-accomplished" name="today-accomplished"></textarea>
-          </section>
-
-          <section class="accountability-section">
-            <label class="accountability-label" for="today-failed">🔸 ما الذي قصّرت فيه؟ ❌</label>
-            <textarea class="accountability-textarea" rows="3" id="today-failed" name="today-failed"></textarea>
-          </section>
-
-          <section class="accountability-section">
-            <label class="accountability-label" for="mood-interactions">🔸 كيف كان مزاجي وتعاملي مع الآخرين؟</label>
-            <textarea class="accountability-textarea" rows="3" id="mood-interactions" name="mood-interactions"></textarea>
-          </section>
-
-          <section class="accountability-section">
-            <label class="accountability-label">🔸 هل كان يومي متوازنًا؟</label>
-            <div class="accountability-radio-group">
-              <label class="accountability-radio-label">
-                <input type="radio" name="day-balance" value="نعم" />
-                <span>نعم</span>
-              </label>
-              <label class="accountability-radio-label">
-                <input type="radio" name="day-balance" value="إلى حدّ ما" />
-                <span>إلى حدّ ما</span>
-              </label>
-              <label class="accountability-radio-label">
-                <input type="radio" name="day-balance" value="لا" />
-                <span>لا، مال إلى:</span>
-              </label>
-            </div>
-
-            <div class="accountability-checkbox-group">
-              <label class="accountability-checkbox-label">
-                <input type="checkbox" name="imbalance-factors" value="العمل" />
-                <span>العمل</span>
-              </label>
-              <label class="accountability-checkbox-label">
-                <input type="checkbox" name="imbalance-factors" value="الآخرين" />
-                <span>الآخرين</span>
-              </label>
-              <label class="accountability-checkbox-label">
-                <input type="checkbox" name="imbalance-factors" value="التشتيت" />
-                <span>التشتيت</span>
-              </label>
-              <label class="accountability-checkbox-label">
-                <input type="checkbox" name="imbalance-factors" value="الراحة الزائدة" />
-                <span>الراحة الزائدة</span>
-              </label>
-            </div>
-          </section>
-
-          <section class="accountability-section">
-            <label class="accountability-label" for="tomorrow-intention">🔸 نيتي للغد:</label>
-            <p class="accountability-subtitle">✦ ما الأمر الذي أودّ تغييره أو تحسينه غدًا؟</p>
-            <textarea class="accountability-textarea" rows="3" id="tomorrow-intention" name="tomorrow-intention"></textarea>
-          </section>
-
-          <p class="accountability-note">📌 يمكنك استخدام هذا النموذج كروتين ليلي ثابت، يُطبع ويُلصق بجانب السرير، أو يُملأ رقمياً قبل النوم.</p>
-
-          <div class="print-button-wrapper">
-            <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
-          </div>
-        </div>
-
-        <!-- تنظيم اللقاءات والمكالمات الأسبوعية -->
-        <div class="meetings-wrapper" id="meetings" role="main">
-          <h1>تنظيم اللقاءات والمكالمات الأسبوعية</h1>
-          <p class="goal">🎯 الهدف: جعل اللقاءات والاتصالات جزءًا من وقتك الواعي، لا عبئًا عشوائيًا.</p>
-          <hr class="divider" />
-
-          <section class="meetings-section">
-            <h2>قائمة اللقاءات أو المكالمات الدورية</h2>
-            <p class="meetings-subtitle">✦ حدّد اللقاءات أو المكالمات التي تتكرر أسبوعيًا أو شهريًا وتستهلك وقتك:</p>
-            <div class="meetings-table-wrapper">
-              <table class="meetings-table">
-              <thead>
-                <tr>
-                  <th>الشخص / الجهة</th>
-                  <th>نوع اللقاء</th>
-                  <th>عدد المرات</th>
-                  <th>المدة التقريبية</th>
-                  <th>هل هو ضروري؟</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td>
-                    <select class="meetings-select">
-                      <option value=""></option>
-                      <option value="نعم">نعم</option>
-                      <option value="لا">لا</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td>
-                    <select class="meetings-select">
-                      <option value=""></option>
-                      <option value="نعم">نعم</option>
-                      <option value="لا">لا</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td>
-                    <select class="meetings-select">
-                      <option value=""></option>
-                      <option value="نعم">نعم</option>
-                      <option value="لا">لا</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td>
-                    <select class="meetings-select">
-                      <option value=""></option>
-                      <option value="نعم">نعم</option>
-                      <option value="لا">لا</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td>
-                    <select class="meetings-select">
-                      <option value=""></option>
-                      <option value="نعم">نعم</option>
-                      <option value="لا">لا</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td>
-                    <select class="meetings-select">
-                      <option value=""></option>
-                      <option value="نعم">نعم</option>
-                      <option value="لا">لا</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td>
-                    <select class="meetings-select">
-                      <option value=""></option>
-                      <option value="نعم">نعم</option>
-                      <option value="لا">لا</option>
-                    </select>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-
-          <section class="meetings-section">
-            <h2>ما الذي يمكن تحسينه؟</h2>
-            <p class="meetings-subtitle">✦ ضع علامة ✔ على ما يمكن تعديله لتحسين إدارة وقتك:</p>
-            <div class="meetings-improvements">
-              <label class="meetings-improvement-item">
-                <input type="checkbox" />
-                <span>تقليل عدد اللقاءات</span>
-              </label>
-              <label class="meetings-improvement-item">
-                <input type="checkbox" />
-                <span>تقصير مدة اللقاءات</span>
-              </label>
-              <label class="meetings-improvement-item">
-                <input type="checkbox" />
-                <span>دمج أكثر من لقاء في وقت واحد</span>
-              </label>
-              <label class="meetings-improvement-item">
-                <input type="checkbox" />
-                <span>إلغاء بعض اللقاءات أو تحويلها إلى رسائل</span>
-              </label>
-            </div>
-          </section>
-
-          <section class="meetings-section">
-            <h2>خطة التنظيم الأسبوعي</h2>
-            <div class="meetings-table-wrapper">
-              <table class="meetings-table">
-              <thead>
-                <tr>
-                  <th>اليوم</th>
-                  <th>اللقاء / المكالمة</th>
-                  <th>التوقيت المقترح</th>
-                  <th>المدة</th>
-                  <th>✔ تم التنفيذ؟</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>السبت</td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td><input type="checkbox" class="meetings-checkbox" /></td>
-                </tr>
-                <tr>
-                  <td>الأحد</td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td><input type="checkbox" class="meetings-checkbox" /></td>
-                </tr>
-                <tr>
-                  <td>الاثنين</td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td><input type="checkbox" class="meetings-checkbox" /></td>
-                </tr>
-                <tr>
-                  <td>الثلاثاء</td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td><input type="checkbox" class="meetings-checkbox" /></td>
-                </tr>
-                <tr>
-                  <td>الأربعاء</td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td><input type="checkbox" class="meetings-checkbox" /></td>
-                </tr>
-                <tr>
-                  <td>الخميس</td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td><input type="checkbox" class="meetings-checkbox" /></td>
-                </tr>
-                <tr>
-                  <td>الجمعة</td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td contenteditable="true" class="meetings-editable"></td>
-                  <td><input type="checkbox" class="meetings-checkbox" /></td>
-                </tr>
-              </tbody>
-            </table>
-            </div>
-          </section>
-
-          <p class="meetings-note">📌 إدارة العلاقات ليست قسوة، بل وعي بالحدود والتوازن.</p>
-
-          <div class="print-button-wrapper">
-            <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
-          </div>
-        </div>
-
-        <!-- تحليل قاعدة 80/20 -->
-        <div class="pareto-wrapper" id="pareto" role="main">
-          <h1>تحليل قاعدة 80/20 – مهامك ذات الأثر الأكبر</h1>
-          <p class="goal">🎯 الهدف: تحديد 20٪ من المهام التي تُحدث 80٪ من نتائجك.</p>
-          <hr class="divider" />
-
-          <section class="pareto-section">
-            <h2>🔹 قائمة مهامي الحالية:</h2>
-            <p class="pareto-subtitle">✦ اكتب جميع المهام أو الأنشطة التي تكرّرها أسبوعيًا:</p>
-            <textarea class="pareto-textarea" rows="6" placeholder="اكتب مهامك أو أنشطتك هنا..."></textarea>
-          </section>
-
-          <section class="pareto-section">
-            <h2>🔹 ما المهام التي تؤدي إلى نتائج حقيقية؟</h2>
-            <p class="pareto-subtitle">✦ من القائمة أعلاه، اكتب المهام التي تُحدث تقدمًا ملموسًا في حياتك أو عملك.</p>
-            <input type="text" class="pareto-input" placeholder="أكتب المهمة هنا" />
-            <input type="text" class="pareto-input" placeholder="أكتب المهمة هنا" />
-            <input type="text" class="pareto-input" placeholder="أكتب المهمة هنا" />
-          </section>
-
-          <section class="pareto-section">
-            <h2>🔹 ما المهام التي تستهلك وقتي دون نفع كبير؟</h2>
-            <p class="pareto-subtitle">✦ اكتب المهام التي تستنزف وقتك دون أثر واضح.</p>
-            <input type="text" class="pareto-input" placeholder="أكتب المهمة هنا" />
-            <input type="text" class="pareto-input" placeholder="أكتب المهمة هنا" />
-            <input type="text" class="pareto-input" placeholder="أكتب المهمة هنا" />
-          </section>
-
-          <section class="pareto-section">
-            <h2>🔹 ما الذي سأغيّره هذا الأسبوع؟</h2>
-            <input type="text" class="pareto-input" placeholder="سأركّز أكثر على ..." />
-            <input type="text" class="pareto-input" placeholder="سأقلل أو أترك ..." />
-          </section>
-
-          <p class="pareto-note">📌 استخدم هذا التمرين مرة أسبوعيًا لتعيد توجيه طاقتك نحو ما يحقق الفرق.</p>
-
-          <div class="print-button-wrapper">
-            <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
-          </div>
-        </div>
-
-        <!-- نموذج مشروعي الكبير -->
-        <div class="big-project-wrapper" id="big-project" role="main">
-          <h1>نموذج مشروعي الكبير</h1>
-          <p class="goal">🎯 الهدف: تحويل أحلامك الكبيرة إلى خطة عملية قابلة للتنفيذ.</p>
-          <hr class="divider" />
-
-          <section class="big-project-section">
-            <label class="big-project-label" for="project-idea">🔸 فكرة المشروع:</label>
-            <p class="big-project-subtitle">✦ ما المشروع أو الهدف الكبير الذي أحلم بتحقيقه؟</p>
-            <textarea class="big-project-textarea" rows="3" id="project-idea" name="project-idea"></textarea>
-          </section>
-
-          <section class="big-project-section">
-            <label class="big-project-label" for="project-why">🔸 لماذا هذا المشروع مهم لي؟</label>
-            <textarea class="big-project-textarea" rows="3" id="project-why" name="project-why"></textarea>
-          </section>
-
-          <section class="big-project-section">
-            <label class="big-project-label" for="success-definition">🔸 كيف سأعرف أنني نجحت؟</label>
-            <p class="big-project-subtitle">✦ ما علامات النجاح الواضحة؟</p>
-            <textarea class="big-project-textarea" rows="3" id="success-definition" name="success-definition"></textarea>
-          </section>
-
-          <section class="big-project-section">
-            <label class="big-project-label">🔸 تقسيم المشروع إلى مراحل:</label>
-            <p class="big-project-subtitle">✦ حوّل الفكرة إلى مراحل واضحة. لكل مرحلة حدّد المهمة الكبرى التي تنقل المشروع إلى الأمام.</p>
-            <table class="big-project-table">
-              <thead>
-                <tr>
-                  <th>المرحلة</th>
-                  <th>المهمة الرئيسية</th>
-                  <th>الموعد المستهدف</th>
-                  <th>الموارد المطلوبة</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td contenteditable="true" class="big-project-editable"></td>
-                  <td contenteditable="true" class="big-project-editable"></td>
-                  <td contenteditable="true" class="big-project-editable"></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td contenteditable="true" class="big-project-editable"></td>
-                  <td contenteditable="true" class="big-project-editable"></td>
-                  <td contenteditable="true" class="big-project-editable"></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td contenteditable="true" class="big-project-editable"></td>
-                  <td contenteditable="true" class="big-project-editable"></td>
-                  <td contenteditable="true" class="big-project-editable"></td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td contenteditable="true" class="big-project-editable"></td>
-                  <td contenteditable="true" class="big-project-editable"></td>
-                  <td contenteditable="true" class="big-project-editable"></td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-
-          <section class="big-project-section">
-            <label class="big-project-label" for="weekly-hours">🔸 جدول العمل:</label>
-            <div class="big-project-inline">
-              <p class="big-project-subtitle">كم ساعة سأخصص أسبوعيًا لهذا المشروع؟</p>
-              <input type="text" class="big-project-hours-input" id="weekly-hours" name="weekly-hours" />
-              <span>ساعات</span>
-            </div>
-            <p class="big-project-subtitle">ما هي الأيام أو الأوقات المناسبة؟</p>
-            <textarea class="big-project-textarea" rows="2" name="work-times"></textarea>
-          </section>
-
-          <section class="big-project-section">
-            <label class="big-project-label">🔸 الموانع المحتملة:</label>
-            <p class="big-project-subtitle">ما أكثر شيء قد يُعيقني؟</p>
-            <textarea class="big-project-textarea" rows="2" name="obstacles"></textarea>
-            <p class="big-project-subtitle">كيف سأتعامل معه؟</p>
-            <textarea class="big-project-textarea" rows="2" name="solutions"></textarea>
-          </section>
-
-          <p class="big-project-note">📌 ابدأ صغيرًا، وكرّر بذكاء، وتذكّر أن كل مشروع عظيم بدأ بخطوة واحدة.</p>
-
-          <div class="print-button-wrapper">
-            <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
-          </div>
-        </div>
-
-        <!-- نموذج يوم العودة -->
-        <div class="return-day-wrapper" id="return-day" role="main">
-          <h1>نموذج "يوم العودة"</h1>
-          <p class="goal">🎯 الهدف: مساعدتك على استعادة الزخم بعد أيام من الانقطاع أو التشتت.</p>
-          <hr class="divider" />
-
-          <section class="return-day-section">
-            <label class="return-day-label">🔸 ما الذي أوقفني؟</label>
-            <textarea class="return-day-textarea" rows="2" placeholder="مشتتات، ظروف، مزاج، طارئ..."></textarea>
-          </section>
-
-          <section class="return-day-section">
-            <label class="return-day-label">🔸 ماذا سأستعيد اليوم؟</label>
-            <div class="return-day-radio-group">
-              <label class="return-day-radio-label">
-                <input type="radio" name="restore" />
-                <span>عادة توقفت</span>
-              </label>
-              <label class="return-day-radio-label">
-                <input type="radio" name="restore" />
-                <span>مشروع مجمّد</span>
-              </label>
-              <label class="return-day-radio-label">
-                <input type="radio" name="restore" />
-                <span>مهمة مؤجلة</span>
-              </label>
-              <label class="return-day-radio-label">
-                <input type="radio" name="restore" />
-                <span>تركيز ذهني</span>
-              </label>
-            </div>
-          </section>
-
-          <section class="return-day-section">
-            <label class="return-day-label">🔸 خطة يوم العودة:</label>
-            <input type="text" class="return-day-input" placeholder="☑ أبدأ بـ ..." />
-            <input type="text" class="return-day-input" placeholder="☑ ثم أُكمِل ..." />
-            <input type="text" class="return-day-input" placeholder="☑ وأُنهي اليوم بـ ..." />
-          </section>
-
-          <section class="return-day-section">
-            <label class="return-day-label">🔸 تقويم مصغّر لثلاثة أيام:</label>
-            <table class="return-day-table">
-              <thead>
-                <tr>
-                  <th>اليوم</th>
-                  <th>الإنجاز (✔/✘)</th>
-                  <th>ملاحظات سريعة</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>يوم العودة</td>
-                  <td>
-                    <select class="return-day-select">
-                      <option value="✔">✔</option>
-                      <option value="✘">✘</option>
-                    </select>
-                  </td>
-                  <td><textarea class="return-day-table-textarea"></textarea></td>
-                </tr>
-                <tr>
-                  <td>+1</td>
-                  <td>
-                    <select class="return-day-select">
-                      <option value="✔">✔</option>
-                      <option value="✘">✘</option>
-                    </select>
-                  </td>
-                  <td><textarea class="return-day-table-textarea"></textarea></td>
-                </tr>
-                <tr>
-                  <td>+2</td>
-                  <td>
-                    <select class="return-day-select">
-                      <option value="✔">✔</option>
-                      <option value="✘">✘</option>
-                    </select>
-                  </td>
-                  <td><textarea class="return-day-table-textarea"></textarea></td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-
-          <section class="return-day-section">
-            <label class="return-day-label">🔸 ملاحظة لنفسي:</label>
-            <textarea class="return-day-textarea" rows="2" placeholder="اكتب لنفسك جملة تحفيزية تُذكّرك لماذا تعود الآن"></textarea>
-          </section>
-
-          <p class="return-day-note">📌 تذكير: لا تُحمّل هذا اليوم كل المهام المؤجلة، بل فقط ما يُعيد الإيقاع الذهني.</p>
-
-          <div class="print-button-wrapper">
-            <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
-          </div>
-        </div>
-
-        <!-- رسم دوائر العلاقات -->
-        <div class="relationships-wrapper" id="relationships" role="main">
-          <h1>🎯 رسم دوائر العلاقات</h1>
-          <p class="goal">🎯 الهدف: وعيٌ بمن حولك وكيف يؤثرون على وقتك، طاقتك، وحضورك الذهني.</p>
-          <hr class="divider" />
-
-          <section class="relationships-circles-section">
-            <div class="relationships-circles-container">
-              <div class="relationships-circle-card">
-                <div class="relationships-circle-icon">1</div>
-                <div class="relationships-circle-text">القريب المغذّي</div>
-                <div class="relationships-circle-desc">من يمنحك دعمًا وراحة</div>
-              </div>
-              <div class="relationships-circle-card">
-                <div class="relationships-circle-icon">2</div>
-                <div class="relationships-circle-text">الضروري الواقعي</div>
-                <div class="relationships-circle-desc">علاقات لا غنى عنها (أهل، زملاء…)</div>
-              </div>
-              <div class="relationships-circle-card">
-                <div class="relationships-circle-icon">3</div>
-                <div class="relationships-circle-text">المستنزف الصامت</div>
-                <div class="relationships-circle-desc">من يسرق وقتك أو طاقتك بلا جدوى</div>
-              </div>
-              <div class="relationships-circle-card">
-                <div class="relationships-circle-icon">4</div>
-                <div class="relationships-circle-text">القابل للتقليص</div>
-                <div class="relationships-circle-desc">من يمكن تقليل العلاقة بهم دون ضرر</div>
-              </div>
-            </div>
-          </section>
-
-          <section class="relationships-section">
-            <table class="relationships-table">
-              <thead>
-                <tr>
-                  <th>الدائرة</th>
-                  <th>الأسماء / العلاقة</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>القريب المغذّي</td>
-                  <td><textarea class="relationships-textarea" placeholder="اكتب الأسماء أو العلاقة هنا"></textarea></td>
-                </tr>
-                <tr>
-                  <td>الضروري الواقعي</td>
-                  <td><textarea class="relationships-textarea" placeholder="اكتب الأسماء أو العلاقة هنا"></textarea></td>
-                </tr>
-                <tr>
-                  <td>المستنزف الصامت</td>
-                  <td><textarea class="relationships-textarea" placeholder="اكتب الأسماء أو العلاقة هنا"></textarea></td>
-                </tr>
-                <tr>
-                  <td>القابل للتقليص</td>
-                  <td><textarea class="relationships-textarea" placeholder="اكتب الأسماء أو العلاقة هنا"></textarea></td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-
-          <section class="relationships-section">
-            <h3 class="relationships-subtitle">✅ ماذا ستفعل حيال ذلك؟</h3>
-            <p class="relationships-question">✦ اكتب نية واحدة أو إجراء بسيط:</p>
-            <textarea class="relationships-action-textarea" placeholder="اكتب نيتك هنا..."></textarea>
-          </section>
-
-          <p class="relationships-note">📌 الزمن الذي تمنحه للعلاقات يعكس قيمك… رتّبها كما ترتّب أولوياتك.</p>
-
-          <div class="print-button-wrapper">
-            <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
-          </div>
-        </div>
-
-        <!-- مخطط توزيع المهام -->
-        <div class="task-distribution-wrapper" id="task-distribution" role="main">
-          <h1>مخطط توزيع المهام على فترات اليوم</h1>
-          <p class="goal">🎯 الهدف: توزيع المهام حسب طاقتك الذهنية في أوقات مختلفة من اليوم.</p>
-          <hr class="divider" />
-
-          <section class="task-distribution-section">
-            <h2>🔹 الفترة الصباحية (أعلى طاقة ذهنية) 🌅</h2>
-            <p class="task-distribution-subtitle">✦ المهام التي تتطلب تركيزًا عاليًا / إبداعًا / اتخاذ قرارات:</p>
-            <textarea class="task-distribution-textarea" name="morning_task1"></textarea>
-            <textarea class="task-distribution-textarea" name="morning_task2"></textarea>
-            <textarea class="task-distribution-textarea" name="morning_task3"></textarea>
-          </section>
-
-          <section class="task-distribution-section">
-            <h2>🔹 فترة الظهيرة (طاقة متوسطة) 🌤</h2>
-            <p class="task-distribution-subtitle">✦ المهام الروتينية أو المتكررة / الاجتماعات / الردود:</p>
-            <textarea class="task-distribution-textarea" name="noon_task1"></textarea>
-            <textarea class="task-distribution-textarea" name="noon_task2"></textarea>
-            <textarea class="task-distribution-textarea" name="noon_task3"></textarea>
-          </section>
-
-          <section class="task-distribution-section">
-            <h2>🔹 الفترة المسائية (طاقة منخفضة) 🌙</h2>
-            <p class="task-distribution-subtitle">✦ المهام الخفيفة / المراجعة / الترتيب / التهيئة للغد:</p>
-            <textarea class="task-distribution-textarea" name="evening_task1"></textarea>
-            <textarea class="task-distribution-textarea" name="evening_task2"></textarea>
-            <textarea class="task-distribution-textarea" name="evening_task3"></textarea>
-          </section>
-
-          <section class="task-distribution-section">
-            <h2>🔹 مهامي الخاصة اليوم:</h2>
-            <table class="task-distribution-table">
-              <thead>
-                <tr>
-                  <th>المهمة</th>
-                  <th>أفضل توقيت لها</th>
-                  <th>✔ تم التنفيذ؟</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><input type="text" class="task-distribution-input" placeholder="المهمة 1" /></td>
-                  <td><input type="text" class="task-distribution-input" placeholder="أفضل توقيت" /></td>
-                  <td><input type="checkbox" class="task-distribution-checkbox" /></td>
-                </tr>
-                <tr>
-                  <td><input type="text" class="task-distribution-input" placeholder="المهمة 2" /></td>
-                  <td><input type="text" class="task-distribution-input" placeholder="أفضل توقيت" /></td>
-                  <td><input type="checkbox" class="task-distribution-checkbox" /></td>
-                </tr>
-                <tr>
-                  <td><input type="text" class="task-distribution-input" placeholder="المهمة 3" /></td>
-                  <td><input type="text" class="task-distribution-input" placeholder="أفضل توقيت" /></td>
-                  <td><input type="checkbox" class="task-distribution-checkbox" /></td>
-                </tr>
-                <tr>
-                  <td><input type="text" class="task-distribution-input" placeholder="المهمة 4" /></td>
-                  <td><input type="text" class="task-distribution-input" placeholder="أفضل توقيت" /></td>
-                  <td><input type="checkbox" class="task-distribution-checkbox" /></td>
-                </tr>
-                <tr>
-                  <td><input type="text" class="task-distribution-input" placeholder="المهمة 5" /></td>
-                  <td><input type="text" class="task-distribution-input" placeholder="أفضل توقيت" /></td>
-                  <td><input type="checkbox" class="task-distribution-checkbox" /></td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-
-          <p class="task-distribution-note">📌 يساعدك هذا النموذج على استثمار يومك دون مقاومة داخلية، من خلال احترام طاقتك لا تحديها.</p>
-
-          <div class="print-button-wrapper">
-            <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
-          </div>
-        </div>
-
-        <!-- مخطط متابعة تقدم المشروع -->
-        <div class="project-progress-wrapper" role="main">
-          <h1>مخطط متابعة تقدم المشروع</h1>
-          <p class="goal">🎯 الهدف: تتبع وتقييم تقدم مشروعك بطريقة منظمة وواقعية.</p>
-          <hr class="divider" />
-
-          <section class="project-progress-section">
-            <label class="project-progress-label">🔸 اسم المشروع:</label>
-            <input type="text" class="project-progress-input" placeholder="اكتب اسم مشروعك هنا" />
-          </section>
-
-          <section class="project-progress-section">
-            <label class="project-progress-label">🔸 تاريخ البداية والانتهاء المستهدف:</label>
-            <div class="project-progress-dates">
-              <input type="date" class="project-progress-date" />
-              <span>إلى</span>
-              <input type="date" class="project-progress-date" />
-            </div>
-          </section>
-
-          <section class="project-progress-section">
-            <label class="project-progress-label">🔸 المراحل الرئيسية للمشروع:</label>
-            <div class="project-progress-table-wrapper">
-              <table class="project-progress-table">
-              <thead>
-                <tr>
-                  <th>المرحلة</th>
-                  <th>الوصف</th>
-                  <th>الموعد المستهدف</th>
-                  <th>الحالة</th>
-                  <th>النسبة المئوية</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>المرحلة 1</td>
-                  <td><input type="text" class="project-progress-input" placeholder="وصف المرحلة" /></td>
-                  <td><input type="date" class="project-progress-date" /></td>
-                  <td>
-                    <select class="project-progress-select">
-                      <option value="">اختر</option>
-                      <option value="لم تبدأ">لم تبدأ</option>
-                      <option value="جارية">جارية</option>
-                      <option value="مكتملة">مكتملة</option>
-                      <option value="متأخرة">متأخرة</option>
-                    </select>
-                  </td>
-                  <td><input type="number" class="project-progress-percent" min="0" max="100" placeholder="%" /></td>
-                </tr>
-                <tr>
-                  <td>المرحلة 2</td>
-                  <td><input type="text" class="project-progress-input" placeholder="وصف المرحلة" /></td>
-                  <td><input type="date" class="project-progress-date" /></td>
-                  <td>
-                    <select class="project-progress-select">
-                      <option value="">اختر</option>
-                      <option value="لم تبدأ">لم تبدأ</option>
-                      <option value="جارية">جارية</option>
-                      <option value="مكتملة">مكتملة</option>
-                      <option value="متأخرة">متأخرة</option>
-                    </select>
-                  </td>
-                  <td><input type="number" class="project-progress-percent" min="0" max="100" placeholder="%" /></td>
-                </tr>
-                <tr>
-                  <td>المرحلة 3</td>
-                  <td><input type="text" class="project-progress-input" placeholder="وصف المرحلة" /></td>
-                  <td><input type="date" class="project-progress-date" /></td>
-                  <td>
-                    <select class="project-progress-select">
-                      <option value="">اختر</option>
-                      <option value="لم تبدأ">لم تبدأ</option>
-                      <option value="جارية">جارية</option>
-                      <option value="مكتملة">مكتملة</option>
-                      <option value="متأخرة">متأخرة</option>
-                    </select>
-                  </td>
-                  <td><input type="number" class="project-progress-percent" min="0" max="100" placeholder="%" /></td>
-                </tr>
-                <tr>
-                  <td>المرحلة 4</td>
-                  <td><input type="text" class="project-progress-input" placeholder="وصف المرحلة" /></td>
-                  <td><input type="date" class="project-progress-date" /></td>
-                  <td>
-                    <select class="project-progress-select">
-                      <option value="">اختر</option>
-                      <option value="لم تبدأ">لم تبدأ</option>
-                      <option value="جارية">جارية</option>
-                      <option value="مكتملة">مكتملة</option>
-                      <option value="متأخرة">متأخرة</option>
-                    </select>
-                  </td>
-                  <td><input type="number" class="project-progress-percent" min="0" max="100" placeholder="%" /></td>
-                </tr>
-              </tbody>
-            </table>
-            </div>
-          </section>
-
-          <section class="project-progress-section">
-            <label class="project-progress-label">🔸 التحديات والحلول:</label>
-            <div class="project-progress-challenges">
-              <div class="challenge-item">
-                <label>التحدي:</label>
-                <textarea class="project-progress-textarea" placeholder="اكتب التحدي الذي تواجهه"></textarea>
-                <label>الحل المقترح:</label>
-                <textarea class="project-progress-textarea" placeholder="اكتب الحل المقترح"></textarea>
-              </div>
-            </div>
-          </section>
-
-          <section class="project-progress-section">
-            <label class="project-progress-label">🔸 الدروس المستفادة:</label>
-            <textarea class="project-progress-textarea" rows="3" placeholder="ما الدروس التي تعلمتها حتى الآن؟"></textarea>
-          </section>
-
-          <section class="project-progress-section">
-            <label class="project-progress-label">🔸 الخطوات التالية:</label>
-            <textarea class="project-progress-textarea" rows="3" placeholder="ما الخطوات التي ستركز عليها في الفترة القادمة؟"></textarea>
-          </section>
-
-          <p class="project-progress-note">📌 المراجعة الدورية تساعدك على البقاء في المسار الصحيح وتعديل الخطة حسب الحاجة.</p>
-
-          <div class="print-button-wrapper">
-            <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
-          </div>
+        <div class="tools-footer">
+          <p><i class="fa-solid fa-lightbulb"></i> جميع هذه الأدوات تفاعلية ويمكن طباعتها أو حفظها للاستخدام الشخصي</p>
+          <a href="index.html" class="back-button">
+            <i class="fa-solid fa-arrow-right"></i>
+            العودة إلى الصفحة الرئيسية
+          </a>
         </div>
       </div>
-    </main>
-    <!-- #endregion End Main Section -->
+    </div>
+    <!-- #endregion End Tools Page -->
+
     <!-- #region Start Footer -->
     <footer>
       <div class="container">
@@ -1776,6 +240,8 @@
             <a href="https://t.me/kudo_25" target="_blank" aria-label="قناة التليجرام"><i
                 class="fa-brands fa-telegram"></i></a>
             <a href="example@mail.com" aria-label="البريد الإلكتروني"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.instagram.com/sabah.al_mousawi?igsh=MWczbW01b25oa24xZw==" aria-label="انستغرام"
+              target="_blank"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
       </div>

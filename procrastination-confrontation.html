@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ورقة مواجهة المماطلة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/tools.css" />
+</head>
+<body class="tool-body">
+  <div class="table-wrapper">
+    <h1>ورقة مواجهة المماطلة</h1>
+    <p class="goal">🎯 الهدف: مساعدتك على كسر التسويف والبدء الفعلي في المهام المؤجلة.</p>
+    <hr />
+    <section>
+      <label for="task">🔹 المهمة المؤجلة:</label>
+      <textarea id="task" placeholder="ما المهمة التي أستمر في تأجيلها، رغم معرفتي بأهميتها؟"></textarea>
+    </section>
+    <section>
+      <label>🔹 ما الذي يجعلني أهرب منها؟</label>
+      <p>✦ ضع ✔ عند الأسباب المحتملة، أو أضف سببك الخاص:</p>
+      <div>
+        <label><input type="checkbox" /> مملة</label>
+        <label><input type="checkbox" /> معقدة أو غير واضحة</label>
+        <label><input type="checkbox" /> لا أعرف من أين أبدأ</label>
+        <label><input type="checkbox" /> أخاف من الفشل أو الرفض</label>
+        <label><input type="checkbox" /> لا وقت كافٍ</label>
+        <label><input type="checkbox" /> مزاجي لا يساعد</label>
+        <label><input type="checkbox" /> سبب آخر <input type="text" placeholder="أضف السبب هنا" class="inline-input" /></label>
+      </div>
+    </section>
+    <section>
+      <label for="negativeThought">🔹 ماذا لو بدأت الآن؟</label>
+      <p>✦ ما الفكرة السلبية التي تمنعني؟</p>
+      <textarea id="negativeThought" placeholder="اكتب الفكرة السلبية..."></textarea>
+    </section>
+    <section>
+      <label for="positiveTruth">✦ ما الحقيقة المضادة التي أؤمن بها؟</label>
+      <textarea id="positiveTruth" placeholder="اكتب الحقيقة المضادة..."></textarea>
+    </section>
+    <section>
+      <label for="rescueStep">✅🔹 خطوة الإنقاذ:</label>
+      <p>✦ ما أول خطوة صغيرة جدًا يمكنني القيام بها خلال 5 دقائق فقط؟</p>
+      <textarea id="rescueStep" placeholder="حدد الخطوة الصغيرة..."></textarea>
+    </section>
+    <section>
+      <label>🔹 موعد الانطلاق:</label>
+      <p>✦ متى أبدأ؟ حدد وقتًا واضحًا.</p>
+      <div>
+        <label>🕒 الساعة: <input type="text" placeholder="00:00" class="time-input" /></label>
+        <label><input type="checkbox" /> فورًا</label>
+      </div>
+    </section>
+    <p class="print-note">
+      📌 لا تنتظر أن تختفي المماطلة لتبدأ… بل ابدأ لتختفي المماطلة.
+    </p>
+    <button onclick="window.print()">🖨️ طباعة الورقة</button>
+  </div>
+</body>
+</html>
+
+

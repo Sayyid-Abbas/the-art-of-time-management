@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>نموذج يوم العودة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/tools.css" />
+</head>
+<body class="tool-body">
+  <div class="table-wrapper" id="return-day">
+    <h1 class="table-title">نموذج "يوم العودة"</h1>
+    <p class="table-subtitle">🎯 الهدف: مساعدتك على استعادة الزخم بعد أيام من الانقطاع أو التشتت.</p>
+    <!-- ما الذي أوقفني؟ -->
+    <div class="form-section">
+      <label>🔸 ما الذي أوقفني؟</label>
+      <textarea rows="2" placeholder="مشتتات، ظروف، مزاج، طارئ..."></textarea>
+    </div>
+    <!-- ماذا سأستعيد اليوم؟ -->
+    <div class="form-section">
+      <label>🔸 ماذا سأستعيد اليوم؟</label>
+      <div class="radio-group">
+        <label><input type="radio" name="restore" /> عادة توقفت</label>
+        <label><input type="radio" name="restore" /> مشروع مجمّد</label>
+        <label><input type="radio" name="restore" /> مهمة مؤجلة</label>
+        <label><input type="radio" name="restore" /> تركيز ذهني</label>
+      </div>
+    </div>
+    <!-- خطة يوم العودة -->
+    <div class="form-section">
+      <label>🔸 خطة يوم العودة:</label>
+      <input type="text" placeholder="☑ أبدأ بـ ..." />
+      <input type="text" placeholder="☑ ثم أُكمِل ..." class="spaced-input" />
+      <input type="text" placeholder="☑ وأُنهي اليوم بـ ..." class="spaced-input" />
+    </div>
+    <!-- تقويم مصغّر لثلاثة أيام -->
+    <div class="form-section">
+      <label>🔸 تقويم مصغّر لثلاثة أيام:</label>
+      <table>
+        <thead>
+          <tr>
+            <th>اليوم</th>
+            <th>الإنجاز (✔/✘)</th>
+            <th>ملاحظات سريعة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>يوم العودة</td>
+            <td>
+              <select>
+                <option value="✔">✔</option>
+                <option value="✘">✘</option>
+              </select>
+            </td>
+            <td><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>+1</td>
+            <td>
+              <select>
+                <option value="✔">✔</option>
+                <option value="✘">✘</option>
+              </select>
+            </td>
+            <td><textarea></textarea></td>
+          </tr>
+          <tr>
+            <td>+2</td>
+            <td>
+              <select>
+                <option value="✔">✔</option>
+                <option value="✘">✘</option>
+              </select>
+            </td>
+            <td><textarea></textarea></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- ملاحظة لنفسي -->
+    <div class="form-section">
+      <label>🔸 ملاحظة لنفسي:</label>
+      <textarea rows="2" placeholder="اكتب لنفسك جملة تحفيزية تُذكّرك لماذا تعود الآن"></textarea>
+    </div>
+    <p class="reminder important">📌 تذكير: لا تُحمّل هذا اليوم كل المهام المؤجلة، بل فقط ما يُعيد الإيقاع الذهني.</p>
+    <div class="print-button-wrapper">
+      <button onclick="window.print()">🖨️ طباعة النموذج</button>
+    </div>
+  </div>
+</body>
+</html>
+
+

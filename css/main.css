@@ -508,7 +508,7 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   line-height: 2;
 }
 .quotes .container p {
-  color: #777;
+  color: var(--dark-gray);
   margin-top: 10px;
   font-size: 18px;
   line-height: 2;
@@ -554,7 +554,7 @@ header .container nav ul .chapters-link .mobile-chapters .chapters-list li {
   }
   .quotes .container ul li > p {
     font-size: 14px;
-    color: #777;
+    color: var(--dark-gray);
   } 
 }
 @media (max-width: 1200px) {

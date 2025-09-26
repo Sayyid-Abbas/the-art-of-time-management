@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>تمرين محاسبة ما قبل النوم</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/tools.css" />
+</head>
+<body class="tool-body">
+  <div class="time-table" id="pre-sleep-accountability">
+    <h1>🌙 تمرين "محاسبة ما قبل النوم – لحظة صفاء"</h1>
+    <p>🎯 الهدف: مراجعة هادئة للذات قبل النوم، لتعزيز الوعي، والتحسّن التدريجي.</p>
+    <hr />
+    <label for="today-accomplished">🔸 ما الذي أنجزته اليوم؟</label>
+    <textarea rows="3" id="today-accomplished" name="today-accomplished"></textarea>
+    <label for="today-failed">🔸 ما الذي قصّرت فيه؟ ❌</label>
+    <textarea rows="3" id="today-failed" name="today-failed"></textarea>
+    <label for="mood-interactions">🔸 كيف كان مزاجي وتعاملي مع الآخرين؟</label>
+    <textarea rows="3" id="mood-interactions" name="mood-interactions"></textarea>
+    <label>🔸 هل كان يومي متوازنًا؟</label>
+    <div class="radio-group">
+      <input type="radio" id="balance-yes" name="day-balance" value="نعم" />
+      <label for="balance-yes">نعم</label>
+      <input type="radio" id="balance-somewhat" name="day-balance" value="إلى حدّ ما" />
+      <label for="balance-somewhat">إلى حدّ ما</label>
+      <input type="radio" id="balance-no" name="day-balance" value="لا" />
+      <label for="balance-no">لا، مال إلى:</label>
+    </div>
+    <div class="checkbox-group indented">
+      <input type="checkbox" id="imbalance-work" name="imbalance-factors" value="العمل" />
+      <label for="imbalance-work">العمل</label>
+      <input type="checkbox" id="imbalance-others" name="imbalance-factors" value="الآخرين" />
+      <label for="imbalance-others">الآخرين</label>
+      <input type="checkbox" id="imbalance-distraction" name="imbalance-factors" value="التشتيت" />
+      <label for="imbalance-distraction">التشتيت</label>
+      <input type="checkbox" id="imbalance-excess-rest" name="imbalance-factors" value="الراحة الزائدة" />
+      <label for="imbalance-excess-rest">الراحة الزائدة</label>
+    </div>
+    <label for="tomorrow-intention">🔸 نيتي للغد:</label>
+    <p>✦ ما الأمر الذي أودّ تغييره أو تحسينه غدًا؟</p>
+    <textarea rows="3" id="tomorrow-intention" name="tomorrow-intention"></textarea>
+    <p>📌 يمكنك استخدام هذا النموذج كروتين ليلي ثابت، يُطبع ويُلصق بجانب السرير، أو يُملأ رقمياً قبل النوم.</p>
+    <div class="print-button-wrapper">
+      <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
+    </div>
+  </div>
+</body>
+</html>
+
+

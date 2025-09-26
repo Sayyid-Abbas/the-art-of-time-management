@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>رسم دوائر العلاقات</title>
+  <!-- استيراد خط كايرو -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/tools.css" />
+</head>
+<body class="tool-body">
+  <div class="table-wrapper">
+    <h1 class="challenge-title">🎯 رسم دوائر العلاقات</h1>
+    <p class="challenge-goal">الهدف: وعيٌ بمن حولك وكيف يؤثرون على وقتك، طاقتك، وحضورك الذهني.</p>
+    <div class="circles-container" aria-label="دوائر العلاقات">
+      <div class="circle-card" title="من يمنحك دعمًا وراحة">
+        <div class="circle-icon">1</div>
+        <div class="circle-text">القريب المغذّي</div>
+      </div>
+      <div class="circle-card" title="علاقات لا غنى عنها (أهل، زملاء…)">
+        <div class="circle-icon">2</div>
+        <div class="circle-text">الضروري الواقعي</div>
+      </div>
+      <div class="circle-card" title="من يسرق وقتك أو طاقتك بلا جدوى">
+        <div class="circle-icon">3</div>
+        <div class="circle-text">المستنزف الصامت</div>
+      </div>
+      <div class="circle-card" title="من يمكن تقليل العلاقة بهم دون ضرر">
+        <div class="circle-icon">4</div>
+        <div class="circle-text">القابل للتقليص</div>
+      </div>
+    </div>
+    <table class="time-table" id="circle-of-relations" aria-label="جدول رسم دوائر العلاقات">
+      <caption>رسم دوائر العلاقات</caption>
+      <thead>
+        <tr>
+          <th scope="col">الدائرة</th>
+          <th scope="col">الأسماء / العلاقة</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>القريب المغذّي</td>
+          <td><textarea placeholder="اكتب الأسماء أو العلاقة هنا"></textarea></td>
+        </tr>
+        <tr>
+          <td>الضروري الواقعي</td>
+          <td><textarea placeholder="اكتب الأسماء أو العلاقة هنا"></textarea></td>
+        </tr>
+        <tr>
+          <td>المستنزف الصامت</td>
+          <td><textarea placeholder="اكتب الأسماء أو العلاقة هنا"></textarea></td>
+        </tr>
+        <tr>
+          <td>القابل للتقليص</td>
+          <td><textarea placeholder="اكتب الأسماء أو العلاقة هنا"></textarea></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="intention-container">
+      <h3>✅ ماذا ستفعل حيال ذلك؟</h3>
+      <p>✦ اكتب نية واحدة أو إجراء بسيط:</p>
+      <textarea placeholder="اكتب نيتك هنا..."></textarea>
+    </div>
+    <p class="final-note">
+      📌 الزمن الذي تمنحه للعلاقات يعكس قيمك… رتّبها كما ترتّب أولوياتك.
+    </p>
+    <button class="print-btn" onclick="window.print()">🖨️ طباعة النموذج</button>
+  </div>
+</body>
+</html>
+
+

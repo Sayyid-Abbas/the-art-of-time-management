@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مخطط توزيع المهام على فترات اليوم</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/tools.css" />
+</head>
+<body class="tool-body">
+  <div class="container" role="main">
+    <h1>🗓 مخطط توزيع المهام على فترات اليوم</h1>
+    <p class="description">🎯 الهدف: تنظيم المهام اليومية حسب الطاقة الذهنية المتوفرة في كل فترة.</p>
+    <section>
+      <h2>🔹 الفترة الصباحية (أعلى طاقة ذهنية) 🌅</h2>
+      <p>✦ المهام التي تتطلب تركيزًا عاليًا / إبداعًا / اتخاذ قرارات:</p>
+      <textarea name="morning_task1"></textarea>
+      <textarea name="morning_task2"></textarea>
+      <textarea name="morning_task3"></textarea>
+    </section>
+    <section>
+      <h2>🔹 فترة الظهيرة (طاقة متوسطة) 🌤</h2>
+      <p>✦ المهام الروتينية أو المتكررة / الاجتماعات / الردود:</p>
+      <textarea name="noon_task1"></textarea>
+      <textarea name="noon_task2"></textarea>
+      <textarea name="noon_task3"></textarea>
+    </section>
+    <section>
+      <h2>🔹 الفترة المسائية (طاقة منخفضة) 🌙</h2>
+      <p>✦ المهام الخفيفة / المراجعة / الترتيب / التهيئة للغد:</p>
+      <textarea name="evening_task1"></textarea>
+      <textarea name="evening_task2"></textarea>
+      <textarea name="evening_task3"></textarea>
+    </section>
+    <section>
+      <h2>🔹 مهامي الخاصة اليوم:</h2>
+      <table class="time-table" id="task-distribution-table" role="grid" aria-label="جدول توزيع المهام">
+        <thead>
+          <tr>
+            <th>المهمة</th>
+            <th>أفضل توقيت لها</th>
+            <th>✔ تم التنفيذ؟</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="task1" aria-label="المهمة 1" /></td>
+            <td><input type="text" name="time1" aria-label="أفضل توقيت للمهمة 1" /></td>
+            <td><input type="checkbox" name="done1" aria-label="تم تنفيذ المهمة 1" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="task2" aria-label="المهمة 2" /></td>
+            <td><input type="text" name="time2" aria-label="أفضل توقيت للمهمة 2" /></td>
+            <td><input type="checkbox" name="done2" aria-label="تم تنفيذ المهمة 2" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="task3" aria-label="المهمة 3" /></td>
+            <td><input type="text" name="time3" aria-label="أفضل توقيت للمهمة 3" /></td>
+            <td><input type="checkbox" name="done3" aria-label="تم تنفيذ المهمة 3" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <p>📌 يساعدك هذا النموذج على استثمار يومك دون مقاومة داخلية، من خلال احترام طاقتك لا تحديها.</p>
+    <div class="print-button-wrapper">
+      <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
+    </div>
+  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>نموذج نظام الطبقات الأربع لإدارة اليوم</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/tools.css" />
+</head>
+<body class="tool-body">
+  <main class="table-wrapper" role="main">
+    <h1 class="table-title">نموذج نظام الطبقات الأربع لإدارة اليوم</h1>
+    <p class="table-subtitle">🎯 الهدف: تقسيم اليوم إلى أربع طبقات تساعدك على تحقيق التوازن بين المهام الذهنية، الاجتماعية، الجسدية، والروحية.</p>
+
+    <!-- الطبقة الأولى -->
+    <section class="form-section">
+      <label for="core-tasks">الطبقة الأولى – المهام الجوهرية:</label>
+      <p>✦ ما المهام الأساسية التي لا يجوز تأجيلها اليوم؟</p>
+      <input type="text" id="core-tasks-1" placeholder="المهمة الأساسية 1" />
+      <input type="text" id="core-tasks-2" placeholder="المهمة الأساسية 2" />
+      <input type="text" id="core-tasks-3" placeholder="المهمة الأساسية 3" />
+    </section>
+
+    <!-- الطبقة الثانية -->
+    <section class="form-section">
+      <label for="relations">الطبقة الثانية – العلاقات والروابط:</label>
+      <p>✦ من الأشخاص الذين أحتاج أن أتواصل معهم أو أُعبّر لهم؟</p>
+      <input type="text" id="relations-1" placeholder="الشخص 1" />
+      <input type="text" id="relations-2" placeholder="الشخص 2" />
+      <input type="text" id="relations-3" placeholder="الشخص 3" />
+    </section>
+
+    <!-- الطبقة الثالثة -->
+    <section class="form-section">
+      <label for="body-energy">الطبقة الثالثة – الجسد والطاقة:</label>
+      <p>✦ ما النشاط الجسدي أو الاستراحة التي سأمنحها لنفسي؟</p>
+      <textarea id="body-energy-1" placeholder="نشاط جسدي أو استراحة 1"></textarea>
+      <textarea id="body-energy-2" placeholder="نشاط جسدي أو استراحة 2"></textarea>
+      <p>✦ ماذا عن الطعام، الماء، والنوم؟</p>
+      <textarea id="body-energy-3" placeholder="ملاحظات عن الطعام، الماء، النوم"></textarea>
+      <textarea id="body-energy-4" placeholder="ملاحظات إضافية"></textarea>
+    </section>
+
+    <!-- الطبقة الرابعة -->
+    <section class="form-section">
+      <label for="spirit">الطبقة الرابعة – الروح والتأمل:</label>
+      <p>✦ لحظة صمت، دعاء، قراءة، سجدة، تأمل...</p>
+      <textarea id="spirit" placeholder="ما ترغب به من لحظة روحية"></textarea>
+    </section>
+
+    <p class="reminder">📌 يمكنك طباعة هذا النموذج يوميًا أو استخدامه رقميًا لهيكلة يومك بلا فوضى.</p>
+
+    <div class="print-button-wrapper">
+      <button type="button" onclick="window.print()">🖨️ طباعة النموذج</button>
+    </div>
+  </main>
+</body>
+</html>
