@@ -275,6 +275,28 @@ textarea {
   min-height: 70px;
 }
 
+/* Special styling for select dropdowns with symbols */
+select {
+  font-weight: bold;
+  text-align: center;
+}
+
+select option {
+  font-family: 'Cairo', sans-serif, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 5px;
+}
+
+/* Table select elements */
+table select {
+  width: 100%;
+  min-width: 60px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
 /* Buttons */
 button,
 .print-button,
@@ -313,6 +335,18 @@ table {
   border-collapse: collapse;
   margin: 1rem 0;
   background-color: var(--main-color);
+}
+
+/* Table wrapper for horizontal scrolling on mobile */
+.table-scroll-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1rem 0;
+}
+
+.table-scroll-wrapper table {
+  min-width: 400px;
+  margin: 0;
 }
 
 th {
@@ -545,11 +579,40 @@ tr:hover {
   }
   
   table {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    min-width: 400px;
   }
   
   th, td {
-    padding: 8px;
+    padding: 12px;
+    white-space: nowrap;
+  }
+  
+  /* Enable horizontal scrolling for tables on mobile */
+  .form-section table {
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+  
+  .form-section table thead,
+  .form-section table tbody {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  /* Keep select symbols at normal size */
+  select {
+    font-size: 1rem;
+    font-weight: bold;
+    min-height: 32px;
+  }
+  
+  table select {
+    font-size: 1.1em;
+    min-width: 50px;
+    text-align: center;
   }
 }
 
@@ -590,6 +653,26 @@ tr:hover {
     width: 70px;
     height: 70px;
     font-size: 0.7rem;
+  }
+  
+  /* Maintain proper table sizing on extra small screens */
+  table {
+    font-size: 0.95rem;
+    min-width: 380px;
+  }
+  
+  th, td {
+    padding: 10px;
+  }
+  
+  /* Keep select elements readable */
+  select {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  table select {
+    font-size: 1.1em;
   }
 }
 
