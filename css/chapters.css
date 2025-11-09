@@ -1,0 +1,252 @@
+/* Chapters Page Styles */
+.chapters-page {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #e6f2f2 0%, #f8fdfd 100%);
+  min-height: calc(100vh - 90px - 200px);
+}
+
+.chapters-page .container {
+  max-width: 1200px;
+}
+
+.chapters-page h1 {
+  text-align: center;
+  color: var(--font-color);
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.chapters-page .intro {
+  text-align: center;
+  color: var(--font-color);
+  font-size: 1.2em;
+  margin-bottom: 50px;
+  opacity: 0.8;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+.chapter-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all var(--transition-duration) ease;
+  border-right: 5px solid var(--secondary-color);
+}
+
+.chapter-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  border-right-color: var(--light-blue);
+}
+
+.chapters-page .chapter-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.chapters-page .chapter-number {
+  background: linear-gradient(135deg, var(--secondary-color), var(--light-blue));
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.chapters-page .chapter-title-section {
+  flex: 1;
+}
+
+.chapters-page .chapter-title {
+  color: var(--font-color);
+  font-size: 1.8em;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+}
+
+.chapters-page .chapter-subtitle {
+  color: var(--secondary-color);
+  font-size: 1.1em;
+  margin: 0;
+  font-weight: 500;
+}
+
+.chapters-page .chapter-description {
+  color: var(--font-color);
+  font-size: 1.05em;
+  line-height: 1.9;
+  margin: 15px 0;
+  padding: 20px;
+  background: #f8fdfd;
+  border-radius: 10px;
+  border-right: 3px solid var(--light-blue);
+}
+
+.chapters-page .chapter-detailed {
+  color: var(--font-color);
+  font-size: 1em;
+  line-height: 1.9;
+  opacity: 0.85;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.chapters-page .chapter-detailed.show {
+  max-height: 3000px;
+}
+
+.chapters-page .chapter-detailed h3 {
+  color: var(--secondary-color);
+  font-size: 1.3em;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  border-right: 4px solid var(--secondary-color);
+  padding-right: 15px;
+}
+
+.chapters-page .chapter-detailed h4 {
+  color: var(--font-color);
+  font-size: 1.1em;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.chapters-page .chapter-detailed p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.chapters-page .chapter-detailed ul {
+  padding-right: 20px;
+  margin-bottom: 15px;
+}
+
+.chapters-page .chapter-detailed ul li {
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+
+.chapters-page .chapter-detailed ol {
+  padding-right: 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.chapters-page .chapter-detailed ol li {
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+.chapters-page .chapter-detailed strong {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.chapters-page .expand-btn {
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.95em;
+  font-weight: 600;
+  transition: all var(--transition-duration);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-family: "Cairo", sans-serif;
+}
+
+.chapters-page .expand-btn:hover {
+  background: var(--secondary-color-hover);
+  transform: translateX(-5px);
+}
+
+.chapters-page .expand-btn i {
+  transition: transform var(--transition-duration);
+}
+
+.chapters-page .expand-btn.expanded i {
+  transform: rotate(180deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chapters-page {
+    padding: 40px 0;
+  }
+
+  .chapters-page h1 {
+    font-size: 2em;
+  }
+
+  .chapters-page .intro {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+  }
+
+  .chapter-card {
+    padding: 20px;
+  }
+
+  .chapters-page .chapter-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .chapters-page .chapter-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3em;
+  }
+
+  .chapters-page .chapter-title {
+    font-size: 1.5em;
+  }
+
+  .chapters-page .chapter-subtitle {
+    font-size: 1em;
+  }
+
+  .chapters-page .chapter-description {
+    font-size: 1em;
+    padding: 15px;
+  }
+
+  .chapters-page .chapter-detailed {
+    font-size: 1em;
+  }
+
+  .chapters-page .chapter-detailed h3 {
+    font-size: 1.25em;
+    margin-top: 20px;
+  }
+
+  .chapters-page .chapter-detailed h4 {
+    font-size: 1.1em;
+  }
+}

@@ -48,3 +48,25 @@ export default async function chaptersList() {
         return errorMessage;
     }
 }
+
+// Toggle chapter detailed content
+window.toggleChapter = function(chapterNum) {
+    const detailedSection = document.getElementById(`chapter-${chapterNum}`);
+    const btn = event.currentTarget;
+    
+    if (detailedSection.classList.contains('show')) {
+        detailedSection.classList.remove('show');
+        btn.classList.remove('expanded');
+        btn.innerHTML = `
+            اقرأ المزيد
+            <i class="fa-solid fa-chevron-down"></i>
+        `;
+    } else {
+        detailedSection.classList.add('show');
+        btn.classList.add('expanded');
+        btn.innerHTML = `
+            عرض أقل
+            <i class="fa-solid fa-chevron-up"></i>
+        `;
+    }
+}

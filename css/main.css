@@ -150,7 +150,7 @@ header .container nav ul .chapters-link .chapters .chapters-list li .chapter-num
 	margin-bottom: 10px;
 }
 header .container nav ul .chapters-link .chapters .chapters-list li .chapter-title {
-	margin-bottom: 20px;
+	margin-bottom: 20p
 }
 header .container nav > ul li a {
 	color: var(--font-color);
@@ -170,8 +170,7 @@ header .container nav > ul li a.active:hover {
   color: #40E0D0;
 }
 header .container nav > ul li a:hover {
-	background-color: rgb(222, 222, 222);
-	color: black;	
+  color: var(--secondary-color)
 }
 header .container nav ul .chapters-link .mobile-chapters {
 	opacity: 0;
